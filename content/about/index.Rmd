@@ -25,3 +25,7 @@ I am driven by the desire to do Field Epidemiology of Infectious diseases, espec
 
 I have been deployed to Guinea as part of a GOARN/ WHO mission to response to the Ebola-Virus Disease outbreak that started in February 2021. The mission aims were to support local diagnostic laboratory, and collaboration continued throughout the year. After 5 missions in Guinea in the contect of Capacity building
 
+
+
+Here I am modifying my website and want to send the changes to GitHub - let's try 
+
