@@ -1,0 +1,46 @@
+theme: "hugo-PaperMod"
+baseURL: http://example.org/
+languageCode: en-us
+title: Hugo Soubrier
+menu: 
+  main: 
+    - name: About me
+      url: /about/
+    - name: C.V.
+      url: /vitae/
+    - name: Publications
+      url: /publications/
+    - name: Portofolio
+      url: /portfolio/
+    - name: Reading List
+      url: /readings/
+      
+           
+params:
+ socialIcons:
+ 
+     - name: email
+       url: soubrierhugo@gmail.com
+     - name: twitter
+       url: "https://twitter.com/soubrier_hugo"
+       
+     - name: github
+       url: "https://github.com/hugzsoubrier"
+    
+ profileMode:
+        enabled: true
+        title: "Hugo Soubrier, MSc"
+        subtitle: "🦟Infectious diseases | 🌴Nature | 🗺Geography | 📖Reading"
+        imageUrl: "img/volcano.PNG" 
+        imageWidth: 120
+        imageHeight: 120
+
+        buttons:
+              - name: CV
+                url: /vitae/
+              - name: Portfolio
+                url: /portfolio/
+
+    
+
+    
