@@ -1,31 +1,46 @@
 ---
 title: "Hello"
-output: html_document
+output: 
+ html_document:
+  css: "/staticcustom/custom.css"
+
 ---
+      <link rel="stylesheet" href="/style/stylesheet.css"/>
 
-welcome to my personal website ! I use it as a platform to keep track of my projects, my programming notes, my research publications as well as my readings. 
+<p class="drop-cap">Welcome to my personal website ! I use it as a platform to keep track of my projects, my programming notes, my research publications as well as my readings. </p> 
 
-My name is **Hugo Soubrier** and I am from the South-East of France next to Nice. 
+My name is **Hugo Soubrier** and I am from the South-East of France. 
 
 <center>
 ![](images/volcano.PNG){width=200px}
 
 </center>
 
-To make it short I love everything that is related to Nature and Biology, but especially Infectious diseases and Epidemiology. I am also in love with everything related to the seas, from sailing to fishing and freediving. 
+To make it short I love everything that is related to Nature and Biology, but especially Infectious diseases and Epidemiology to which I devoted my studies. 
 
 
-### Education
-
-I have studied Biology & Microbiology at Imperial College London, before an MSc in Control of Infectious Diseases at the London School of Hygiene and Tropical Medecine (LSHTM). Since my MSc, I have been working at Bernhard Nocht Institute of Tropical Medicine in the Africa team of the Virology department. 
-
-### My aim
-
-I am driven by the desire to do Field Epidemiology of Infectious diseases, especially in Africa. To this aim, I have 
-
-I have been deployed to Guinea as part of a GOARN/ WHO mission to response to the Ebola-Virus Disease outbreak that started in February 2021. The mission aims were to support local diagnostic laboratory, and collaboration continued throughout the year. After 5 missions in Guinea in the contect of Capacity building
+I have studied Biology & Microbiology at Imperial College London, before an MSc in Control of Infectious Diseases at the London School of Hygiene and Tropical Medicine (LSHTM). Since my MSc, I have been working at Bernhard Nocht Institute of Tropical Medicine (BNITM) in the Africa team of the Virology department. 
 
 
+I am driven by the desire to do Field Epidemiology of Infectious diseases as a response to Outbreaks and Emergencies. I am passionate about the field work, but also data science and Epidemiology tools. As a result, I am working toward bridging both fields, and use the data science tools such as R, Rmarkdown, Shiny, SQL and others to the response of Outbreaks and the studies of Emerging infectious diseases on the field. 
 
-Here I am modifying my website and want to send the changes to GitHub - let's try 
+Being curious and interested in many aspects of Infectious diseases, I have been trying to accumulate knowledge and competence in various domains, with the perspective of becoming a good and complete Epidemiologist. 
+
+
+HERE I WANT A DIAGRAM THAT REPRESENT MY CURSUS AND THE COMPETENCE I AM TRYING TO BRING TOGETHER
+
+
+<h3> Field </h5> 
+
+<h3> Diagnostic </h5> 
+
+<h3> Data Science </h5> 
+
+<h3> SOPs </h5> 
+
+<h3> Epidemiology </h5> 
+
+<h3> Phylogenetics </h5> 
+
+<h3> Virology </h5> 
 
