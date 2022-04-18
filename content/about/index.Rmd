@@ -1,46 +1,84 @@
 ---
-title: "Hello"
+title: "Hello !"
 output: 
  html_document:
-  css: "/staticcustom/custom.css"
-
+  css: "/css/custom.css"
 ---
-      <link rel="stylesheet" href="/style/stylesheet.css"/>
 
-<p class="drop-cap">Welcome to my personal website ! I use it as a platform to keep track of my projects, my programming notes, my research publications as well as my readings. </p> 
+<html>  
+    <link rel="stylesheet" href="/css/custom.css" />
+</html>
 
-My name is **Hugo Soubrier** and I am from the South-East of France. 
+<p class="intro">Welcome to my personal website! I use it as a platform to keep track of my projects, my programming notes, my research publications as well as my readings.</p>
 
-<center>
-![](images/volcano.PNG){width=200px}
+My name is **Hugo Soubrier** and I am from the South-East of France.  
 
-</center>
+I am interested in many things related to Nature and Biology, but it is to Infectious diseases and Epidemiology that I decided to devote my studies. 
 
-To make it short I love everything that is related to Nature and Biology, but especially Infectious diseases and Epidemiology to which I devoted my studies. 
+Driven by the desire to do Field Epidemiology of Infectious diseases especially in the context of Emergencies and Response to Outbreaks, I am always thriving for travels and new adventures. I want to use data analytics tools such as R, Markdown, Shiny, SQL and others to support, improve and facilitate the workflow of epidemiology on the field.
 
-
-I have studied Biology & Microbiology at Imperial College London, before an MSc in Control of Infectious Diseases at the London School of Hygiene and Tropical Medicine (LSHTM). Since my MSc, I have been working at Bernhard Nocht Institute of Tropical Medicine (BNITM) in the Africa team of the Virology department. 
-
-
-I am driven by the desire to do Field Epidemiology of Infectious diseases as a response to Outbreaks and Emergencies. I am passionate about the field work, but also data science and Epidemiology tools. As a result, I am working toward bridging both fields, and use the data science tools such as R, Rmarkdown, Shiny, SQL and others to the response of Outbreaks and the studies of Emerging infectious diseases on the field. 
-
-Being curious and interested in many aspects of Infectious diseases, I have been trying to accumulate knowledge and competence in various domains, with the perspective of becoming a good and complete Epidemiologist. 
+Being curious and interested in many aspects of Infectious diseases, I have been trying to accumulate knowledge and competence in various domains, as I truly believe that a good and complete epidemiologist needs skills spanning a wide range of domain. 
 
 
-HERE I WANT A DIAGRAM THAT REPRESENT MY CURSUS AND THE COMPETENCE I AM TRYING TO BRING TOGETHER
+<div class = "grid"> 
+<div>
+#### Microbiology & Virology
+<details>
+The teaching in immunology, virology and bacteriology during my BSc in Microbiology at Imperial College London, and then my MSc in Control of Infectious Diseases at the London School of Tropical Medicine (LSHTM), has given me a critical eye on the biology, ecology spread and control of infectious agents.
+</details>
+</div>
+
+<div>
+<h4> General data science </h4>
+<details>
+I started learning data science with self-taught resources but since then I have applied several of my skills to my university projects and recent work at Bernhard Nocht Institute of Tropical Medicine (BNITM). I am mainly focused on R and its environment (Rmarkdown, Rshiny …), but I also know SQL, Markdown, HTML and CSS. I love to learn and discover new skills and tools, as an example, I have learned how to code the current website to help me with organize my projects and store my programming notes. 
+
+My data science skills were reinforced on the theoretical side by strong Advanced Statistics course that I followed during my MSc at the LSHTM. 
+</details>
+</div>
+
+<div>
+#### Spatial data science 
+<details>
+Spatial data science has a very special importance for me. I love maps and geography, and therefore at LSHTM I decided to study Spatial Epidemiology. Since then, I have never stopped to practice this skill and tried to apply it to most of my projects. I am fond of map making, and other data visualization in spatial context. From my master project until my most recent publication, I am always using maps as my primary point to understand a situation or context. 
+
+I am comfortable with ArcGIS, QGIS, GeoDa, SatScan, but it’s mainly on R that I have conducted most of my spatial analysis. I know how to make maps as well as interactive maps from R environment and embed them in various support such as markdown reports or Shiny dashboards. 
+
+I also have extensive knowledge of remote-sensing data which were my primary data source for my Master project. I have used R to download, handled and analyzed data provided by Sentinel-2 and Landsat-8 satellites. Processing GeoTiff files into Temperature, Rainfall, Landcover and NDVI datasets. I have also learned to performed geographical calculation, and extract raster values for given sampled points. 
+</details>
+</div>
+
+<div>
+#### Epidemiology 
+<details>
+My epidemiology competence stem from my MSc Control of Infectious Diseases at the LSHTM. It is my main subject of interest, and from the basics of epidemiology I have deepened my knowledge to Spatial Epidemiology and Epidemiology of Infectious Diseases, also Field Epidemiology and its various applications to Emergency context and Outbreaks. 
+
+The different Advanced statistics course I followed at the LSHTM have equipped me with solid theoretical foundations for my epidemiological analysis. 
+</details>
+</div>
+
+<div>
+#### Diagnostics
+<details>
+It’s my belief that any strong epidemiologist shall have a good understanding of the data collection workflow in order to identify pitfalls, biases and to fully grasp the extent of its datasets. On this basis, I have tried to be at the start of the data collection workflow, and now I can proudly say that I have a strong diagnostic experience. 
+
+Having worked 2 years at Bernhard Nocht Institute of Tropical Medicine in the Africa Team of the Virology department, we were specialized in diagnostic of class-4 infectious agents (Ebolaviruses, Marburgviruses, Lassa virus, Yellow Fever virus, Dengue virus…). There I was trained by the European Mobile Laboratory, for handling of class-4 pathogens in BSL-3 laboratories on the field. 
+
+I have solid grounds in PCR diagnostics especially qRT-PCR, as well as in serology (IFA, ELISA). Our project of capacity building of local Diagnostic laboratory in West Africa has given me opportunities to share those skills by training local teams. 
+</details>
+</div>
+
+<div>
+#### Field work 
+<details>
+Field work was the first experience I tried to obtain as soon as my MSc was over. I am glad to say that I have now been deployed 5 times to Guinea to respond to the Ebola Virus Disease outbreak that started in February 2021. The deployments under the Global Outbreak Alert and Response Network (GOARN) of WHO, has given me strong field experience in what could be described as intense settings.
+
+I have loved my work there, and our capacity building project in Conakry and in the remote forest of Guinea has been extremely valuable to me, as much on the professional side, as on the personal side. My experience of Africa was up my expectations, and reinforced my desire to work there on the field. 
+</details>
+</div>
+
+</div>
 
 
-<h3> Field </h5> 
 
-<h3> Diagnostic </h5> 
-
-<h3> Data Science </h5> 
-
-<h3> SOPs </h5> 
-
-<h3> Epidemiology </h5> 
-
-<h3> Phylogenetics </h5> 
-
-<h3> Virology </h5> 
 

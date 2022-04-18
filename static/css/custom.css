@@ -1,0 +1,41 @@
+/* This is the css file of my website */
+
+
+p.intro::first-letter {
+  
+  color: #A52A2A;
+  float: left;
+  font-weight: bold;
+  font-size: 6em;
+  margin: 0 .1em 0 0;
+  line-height: 0.85;
+  
+}
+
+p {
+  text-align: justify;
+}
+
+details {
+}
+
+
+/* the grid column layout */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 0.5rem;
+}
+
+.grid > div {
+  background: #ECFDF2;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+
+
+
+
+
