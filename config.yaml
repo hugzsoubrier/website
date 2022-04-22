@@ -1,7 +1,7 @@
 theme: "hugo-PaperMod"
 baseURL: http://example.org/
 languageCode: en-us
-title: Hugo Soubrier
+title: Home
 menu: 
   main: 
     - name: About me
