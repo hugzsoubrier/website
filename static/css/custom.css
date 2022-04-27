@@ -1,6 +1,5 @@
 /* This is the css file of my website */
 
-
 p.intro::first-letter {
   
   color: #A52A2A;
@@ -20,16 +19,127 @@ details {
 
 /* the grid column layout */
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 0.5rem;
+.grid {  
+  display: grid;    
+  grid-template-columns: [first] 33.33% [line2] 33.33% [line3] 33.33% [line-4] 33.33% [end];
+  grid-template-rows: [row1-start] auto [row1-end] auto [third-line] auto [last-line];
+  grid-template-areas:
+    "item-1 item-2 item-3"
+    "item-4 item-5 item-6";
+  column-gap: 2px; 
+  row-gap: 5px ;
+} 
+
+.grid > div { 
+  background: #FBEEE6; 
+  padding: 10px;
 }
 
-.grid > div {
-  background: #ECFDF2;
-  padding: 0.5rem;
-  border-radius: 1.5rem;
+
+section {
+  padding-top: 4rem;
+  width: 50%;
+  margin: auto;
 }
+
+details[open] summary ~ * {
+  animation: open 0.8s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 0.5px solid black;
+  position: relative; 
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+.item-1 > summary:after  {
+  content: "🦠"; }
+.item-2 > summary:after  {
+  content: "📊"; }
+.item-3 > summary:after  {
+  content: "💻"; }
+.item-4 > summary:after  {
+  content: "🗺"; }
+.item-5 > summary:after  {
+  content: "🔬"; }
+.item-6 > summary:after  {
+  content: "🌴"; }
+
+details summary:after {
+  float: right;
+  font-size: 1.75rem; 
+  line-height: 0;
+  margin-top: 0.75rem;}
+
+details[open] summary:after {
+  animation: spin 1.8s;
+} @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+details[close] summary:after {
+  animation: spin 1.8s;
+} @keyframes details[close] spin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+details summary {
+  outline: 0; 
+}
+
+ details p {
+  font-size: 13px;
+  margin: 0 0 1rem;
+} 
+
+/* HIGHLIGHT */
+
+strong {
+  position: relative; 
+}
+
+strong::before {
+  background-color: #FFC668;
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-1deg);
+}
+
+
+
+
+
 
 

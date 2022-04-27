@@ -34,9 +34,11 @@ Small sentence about me
   <div class="date">2019 - 2020</div>
   <div class="description">
   
-Multi-disciplinary course aiming at bridging disciplines to study and control infectious diseases. **Merit Distinction** - GPA: 4.01/5 (80,2% Upper-First-class honours).
+Multi-disciplinary course aiming at bridging disciplines to study and control infectious diseases.\
+**Merit Distinction** - GPA: 4.01/5 (80,2% Upper-First-class honours).
  
  <details>
+ <summary> more details </summary> 
  
  **Term 1:** 
 
@@ -60,12 +62,17 @@ Multi-disciplinary course aiming at bridging disciplines to study and control in
 
 **Master Project**: *Spatial distribution and environmental factors associated with Anopheles mosquitoes on the Bijagós Archipelago, Guinea-Bissau*
 
-Objectives
+Objectives:
+
 - to provide clear mapping of the main mosquito species sampled on 5 islands of Bijagos Archipelago during the dry period (November/December) 2017.
+
 - to collect, process and map remotely-sensed environmental and climatologic data of interest for the studied islands during the study period.
+
 - to process and handle epidemiological data collected in 2017.
+
 - to model the association between mosquito density, epidemiological and environmental variables at each sampling sites.
-- All analyses and data science were performed on R.
+
+- All analyses, maps and data science were performed on R.
 
  </details>
  
@@ -196,19 +203,28 @@ Description of course
 <!-- This is the Skills Section -->
 
 <div class = "grid">
- <div class="section">Skills</div>
- <div class="item">
+ <div class="section">Specific Skills</div>
+ <div class="item"> 
  
+<h4>Programming</h4>
+
+- Data science 
+- R 
+- Css / HTML 
+- SQL 
+
+<h4>Laboratory</h4>
+
+- BSL- 2 work
  
+<h4>Diplomas</h4>
 
-#### Field Work 
+- GOARN / WHO   
 
-#### Programming 
 
-#### Diplomas 
- 
- - First Skill
- - Second Skill
+
+
+
  
  </div>
  </div>
@@ -226,6 +242,8 @@ Description of course
  
  </div>
  </div>
+ 
+<br>
 
 Some textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome text
 
