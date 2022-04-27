@@ -125,7 +125,7 @@ strong {
   position: relative; 
 }
 
-strong::before {
+strong::before { 
   background-color: #FFC668;
   content: "";
   position: absolute;
