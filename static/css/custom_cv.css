@@ -18,6 +18,11 @@ span.title {
   color: #000000;
 }
 
+.intro { 
+  font-style: italic;
+  font-weight: lighter;
+}
+
 /* the grid column layout */
 
 .grid {  
