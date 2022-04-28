@@ -35,7 +35,7 @@ span.title {
   column-gap: 5px; 
   row-gap: 5px ; 
   
-  background:linear-gradient(#D5D8DC  ,#D5D8DC  ) 150px/1.2px 100% no-repeat;
+  background:linear-gradient(#D5D8DC  ,#D5D8DC  ) 150px/1.5px 100% no-repeat;
 }
 
 .grid > div {
@@ -100,14 +100,18 @@ span.title {
 
 details {
   position: relative;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 0.1px solid grey;
+  border-bottom: 0.1px solid grey;
   width: 100%;
-  cursor: pointer}
+  cursor: pointer} 
   
 details summary::-webkit-details-marker {
   display:none;
 } 
+
+details summary { 
+  font-weight: lighter;
+}
 
 details[open] summary ~ * {
   animation: open 0.4s ease-in-out;
