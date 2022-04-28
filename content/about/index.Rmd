@@ -7,7 +7,7 @@ output: html_document
     <link rel="stylesheet" href="/css/custom.css" />
 </html>
 
-<p class="intro">Welcome to my personal website! I use it as a platform to keep track of my projects, my programming notes, my research publications as well as my readings.</p>
+<p class="intro">Welcome to my academic website! I use it as a platform to keep track of my projects, my programming notes, my research publications as well as my readings.</p>
 
 My name is **Hugo Soubrier** and I am from the South-East of France.  
 

@@ -34,8 +34,10 @@ span.title {
 }
 
 .grid > div {
-  background: #FBEEE6;
+  background: #FFFFFF;
 } 
+
+/* #FBEEE6 */
 
 .section {
   color: #C0392B; 
@@ -47,8 +49,8 @@ span.title {
 .item {
   text-align: left;
   font-size: 16px;
-  font-weight: bold;
-  color: orange;
+  font-weight: semi-bold;
+  color: #7FB3D5;
   grid-area: item;
 }
 
@@ -59,9 +61,9 @@ span.title {
 }
 
 .item >ul {
-  list-style-type: none;
+ font-size: 13px;
   text-align: left;
-  color: purple;
+  color: black;
   grid-area: item;
 }
 
@@ -69,9 +71,9 @@ span.title {
 .org {
   grid-area: org;
   font-size: 16px;
-  font-weight: normal ;
+  font-weight: 300 ;
   text-align: center;
-  color: green;
+  color: #F5B041;
 }
 
 .date {

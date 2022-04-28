@@ -91,7 +91,7 @@ Objectives:
   <div class="date">2016 - 2019</div>
   <div class="description">
   
-The course covered the basics of many aspects of biological sciences. Selection of options covering Bacteriology, Virology, and Immunology allowed me to transform it into a Microbiology course.\
+The course covered the basics of many aspects of biological sciences. Selection of options covering Bacteriology, Virology, and Immunology allowed me to transform it into a Microbiology degree.\
 **Second class Honours (Upper division)** - 69%
  
  <details>
@@ -179,9 +179,26 @@ French Scientific Baccalaureat with International Options (OIB)\
  <div class="date">Nov. 2020 - May. 2021</div>
  <div class="description">
   
- DESCRIPTION OF POSITION
- 
- <details>
+Research assistant on Lassa fever immunology in humans and rodents for the LAROCS project supervised by Dr. Elisabeth Fichet-Calvet.
+
+<details>
+<summary> more details </summary>
+
+- Main project was investigating various human samples for IgG and IgM antibodies to assess the potential for urine and saliva fluids in ELISA testing as correlates to classical blood samples.
+
+- Work in CL-2 lab, with handling and inactivation of potentially infectious humans samples under the Bio Safety Cabinet using protective equipment.
+
+- Designed and conduct ELISA test for IgG and IgM on +1,300 samples from Guinea and Sierra Leone.
+
+- Additional ELISA test also performed on animals samples such as whole blood rodents and ovins sera, in order to investigate the agreement between ELISA testing and gold-standard IFA for animal serology.
+
+- Viral RNA extraction, preparation of MasterMix and q-Reverse-Transcriptase PCR for Lassa Virus detection.
+
+- Performed descriptive statistical analysis and mapping of study area for publications
+
+
+The work resulted in a first author publication in *Viruses*: **Detection of Lassa virus-reactive IgG antibodies in wild rodents: validation of a capture enzyme-linked immunological assay**
+
  </details>
  
  </div>
@@ -192,10 +209,21 @@ French Scientific Baccalaureat with International Options (OIB)\
  <div class="org">Department of Infectious Disease Epidemiology, Imperial College London</div>
  <div class="date">Aug. - Sept. 2018</div>
  <div class="description">
-  
- DESCRIPTION OF POSITION
- 
+8 weeks UROP internship in Dr Nick Croucher’s Bacteriology group at St Mary’s Hospital campus of Imperial College London, Departement of Infectious Disease Epidemiology.
+
  <details>
+ <summary> more details</summary>
+
+- Research project focused on the S. pneumoniae competence system.
+
+- Worked with potentially pathogenic samples in a CL-2 lab
+
+- Designed and conducted experiments on *S. pneumoniae*.
+
+- Site-directed mutagenesis, gene cloning, PCR, preparation and plating of bacteria, colonies counting, handling of protoplasts
+
+- Produced a detail protocol for the generation of *S. pneumoniae* protoplasts, and generation of mutated endA gene, for study of competence asymmetry.
+
  </details>
  
  </div>
@@ -207,10 +235,7 @@ French Scientific Baccalaureat with International Options (OIB)\
  <div class="date">2016 - 2020</div>
  <div class="description">
   
- DESCRIPTION OF POSITION
- 
- <details>
- </details>
+Sharing Knowledge and preparation for the final year exams of French and English: Baccalauréat, A-levels and IB, in Physics-Chemistry, Biology, Geology, and History.
  
  </div>
  </div>
@@ -221,9 +246,17 @@ French Scientific Baccalaureat with International Options (OIB)\
  <div class="date">2014 & 2015</div>
  <div class="description">
   
- DESCRIPTION OF POSITION
+ 2 x 3 months Summer volunteering to help with animal monitoring and conservation in South African game reserves.
  
  <details>
+ <summary> more details</summary>
+- Balule reserve, Kruger National Park and Zululand
+
+- Help with the conservation of endangered species.
+
+- Daily tracking, monitoring and identification of the main endangered species in the reserves
+
+- Handling of animals, and carcasses for hygiene purposes - prevention disease outbreak
  </details>
  
  </div>
@@ -249,49 +282,146 @@ French Scientific Baccalaureat with International Options (OIB)\
 
 <div class = "grid">
  <div class="section">Specific Skills</div>
- <div class="item"> 
+ <div class="item"> Languages </div>
+ <div class ="description"> 
  
-<h4>Programming</h4>
-
-- Data science 
-- R 
-- Css / HTML 
-- SQL 
-
-<h4>Laboratory</h4>
-
-- BSL- 2 work
+- French : native speaker 
+- English : fluent
+- Spanish : very good comprehension and good speaking ability
  
-<h4>Diplomas</h4>
+ </div>
+ 
+ </div>
 
-- GOARN / WHO   
+<div class = "grid">
+ <div class="item"> Data science </div>
+ <div class ="description"> 
+ 
+ <details>
+ <summary> details of skills & softwares</summary>
+<h5>R</h5> 
+Strong R skills for data sciences especially using Pipes and the Tidyverse. Experience of R markdown, R shiny, R Blogdown. 
 
+Strong R skills for Epidemiology analysis using resources from R4Epi, RECON and Epidemiologist R Handbook packages. I have used R to generate analysis report, graph-making and dashboards for data analysis
 
+<h5>SQL</h5>
+Experience of SQL querying especially with postgres SQL. I have used it to as a way of centralising data, and connected my databases to a R shiny dashboard. 
 
+<h5>HTML/CSS</h5>
+Experience of HTML to modify a markdown file, and create websites using R. CSS stylesheet created to customise the Markdown documents, shiny App and website.
+ </details>
+ </div>
+ </div>
+ 
+ <div class = "grid">
+ <div class="item"> Spatial Data science </div>
+ <div class ="description"> 
+ 
+ <details>
+ <summary>details of skills & softwares</summary>
+<h5>R</h5> 
+Strong R skills for spatial displaying, and analysis, including use and analysis of
+remote-sensing data. 
 
+<h5>Other Softwares </h5> 
 
+Very Good understanding of ArcGIS, QGIS, GeoDa and
+SatScan used in severl projects.
+
+<h5>Illustrator</h5>
+Used for final map-making refinements. 
+</details>
+ </div>
+ </div>
+ 
+ <div class = "grid">
+ <div class="item"> Other Softwares of Interests</div>
+ <div class ="description"> 
+ 
+- ODK/Enketo for questionnaire designing
+- Basics phylogenetics analysis using BEAST and associated softwares (Beauti, Tracer, FigTree…)
+- Sequence visualiser softwares: ARTEMIS / Snap Gene
  
  </div>
  </div>
+ 
+ 
+ <div class = "grid">
+ <div class="item"> Laboratory work</div>
+ <div class ="description"> 
+ 
+- Manipulation of pathogenic samples - BSC-L2 / BSC-L3.
+- Work under the glovebox for manipulation of Class-4 pathogens
+- diagnostics workflow: Sample reception/inactivation, RNA extraction, MM preparation, q-RT-PCR, result interpretation
+- serology workflow: ELISA and IFA testing. 
+ 
+ </div>
+ </div>
+ 
+<div class = "grid">
+<div class="item"> Field Work & Deployments</div>
+<div class ="description"> 
+ 
+- item 1
 
+- item 2
+ 
+ </div>
+ </div>
+ 
+<div class = "grid">
+<div class="item"> Diplomas & Trainings</div>
+<div class ="description"> 
+ 
+Mandatory Online Certificates for **deployment under WHO/GOARN**:
+
+- BSAFE
+- GO certificate for Ebola response
+- Serve with Pride
+- Prevention of Harassment and Abuse by UN personnel - Working harmoniously
+- UN Human Right Responsibilities
+- GOARN tier 1 course
+
+**Online training for Ethic Research- LSHTM** 
+
+Short online course, with online examination about the Ethics in Science, with a emphasis on Epidemiological research. Resulted in a Certificate of Ethics Research.
+ 
+ 
+**GIS course at LSHTM**
+
+participated in short-course on the introduction to GIS and Spatial Analysis, using ARC-GIS.
+
+**LonWHO 2019** 
+
+3 days WHO simulation conference. Themed on “Conflict and Health”. Represented the pharmaceutical company PFIZER, which approval was required for countries resolution. Lobby work to ensure the company interest are reflected in resolutions tackling health aspects in conflict zone. The conference gave a great understanding of diplomacy, and global health governance.
+
+ </div>
+ </div>
+ 
 <hr>
 
 <!-- This is the Interests Section -->
 
 <div class = "grid">
  <div class="section">Interests</div>
- <div class="item">
+ <div class="description">
  
- - First Interest
- - Second Interest
+**Leadership**: Captain of IC Fencing Men’s second Team.
+
+- 16 years of Fencing, participated in National and International competitions (France).
  
+- Member of IC Fencing team 3 years in a row, winners of 2018 South-Eastern Conference Cup
+and South-Eastern 2A league, got promoted to South-Eastern 1A league.
+
+- Organisation of Trainings and Travels.
+ 
+International PADI license. Level 1, 25+ scuba diving and nocturnal divings. Amateur of sailing, freediving
+and spearfishing.
+
+Historical, Geographic, Philosophical and Scientific readings.
+
  </div>
  </div>
- 
-<br>
-
-Some textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome text
-
 
 
 
