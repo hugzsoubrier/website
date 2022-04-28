@@ -165,9 +165,40 @@ French Scientific Baccalaureat with International Options (OIB)\
   <div class="date">May. 2021 - ongoing</div>
   <div class="description">
   
- DESCRIPTION OF POSITION
+ Research Assistant position within the Africa Team. My role was to support the capacity building and research activities going on in Guinea. I also created a R dahsboard and SQL process to visualise / analyse the activities of laboratories. The dashboard also included analysis to follow activities per pathogen for future outbreak response. 
  
  <details>
+ 
+ <summary> more details</summary>
+ 
+ Involved in 5 deployment under GOARN/ WHO to support **diagnostic capacity building for EBOV outbreak response in Guinea**. 
+ 
+The project partnered with the *Laboratoire des Fièvre Hémmoragiques Virales de Guinée (LFHVG)*, the reference laboratory based in Conakry, the  *Laboratoire des Fièvre Hémmoragiques Virales de Gueckedou (LFHV-GKD)* and the *Hopital Régional de N'Zérékoré* in the Forest regions of guinea. 
+ 
+The main aim was to train local staff, re-organise & re-structure the laboratories as well as deliver consumables and equipment, with the objective of strengthening the diagnostic activities of Guinea regarding hemorrhagic fevers viruses: EBOV, MARV, LASV, DENV, YFV, CCHFV ...
+
+I also conducted some scientific research on surveillance of several pathogens in forest guinea using serology. The work is still ongoing with a publication in scope. 
+
+I was involved in the following tasks:
+ 
+- Theoretical and practical training of local staff on diagnostics (sample reception, manipulation & inactivation, RNA extraction, Master Mix preparation and qRT-PCR runs on RotorGenes, Analysis of runs and data entry). Enhanced training on Bio-safety and manipulation under the Glovebox. 
+ 
+- Creation of a full database system for the storage, samples, results and equipment management of the laboratories. The new databases were created according to local staff needs, and was made compatible with a later process of epidemiological/data analysis. Training of the local staff on Excel handling, and data entry. 
+
+- Creation of a complete Dashboard on R shiny to allow visualisation / analysis of all the Laboratory activities. As well as "per pathogen" analysis for future outbreak response. 
+
+- Support various logistic activities related to the project: Shipments, consumables ordering, storage organisation... 
+
+- Writing and Management of several pacckages of documentation to organise the workflow of the laboratory. These included Standard Operating Procedures (SOP), Short Working Instructions (SWI), logs and forms. All writtent both in French and English for local staff. 
+
+- Multiple Theoretical training to local staff on: Basics of Epidemiology, Diagnostic laboratory workflow, biosafety, serology, Virology of viruses of forest Guinea, Databases. 
+
+- Multiple Infrastructure and Construction work to improve the workflow and safety in the laboratories. Construction of a one-way system to limit contamination and increase safety at the reception/ inactivation steps. 
+
+- Multiple Electrical work to cope with electrical instability and decrease the laboratories dependence on public electricity. Work on generators and whole-laboratory electrical plans.
+
+- General work regarding Public relationship in Africa
+ 
  </details>
  
  </div>
