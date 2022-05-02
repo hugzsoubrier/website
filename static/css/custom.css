@@ -126,7 +126,7 @@ strong {
 }
 
 strong::before { 
-  background-color: #D0ECE7;
+  background-color: #FAD7A0;
   content: "";
   position: absolute;
   width: calc(100% + 4px);

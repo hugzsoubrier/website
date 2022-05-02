@@ -5,6 +5,9 @@ date:
 slug: []
 categories: []
 tags: []
+output:
+   blogdown::html_page:
+     toc: true
 ---
 
 <html>  
@@ -245,7 +248,7 @@ The work resulted in a first author publication in *Viruses*: **Detection of Las
  <details>
  <summary> more details</summary>
 
-- Research project focused on the S. pneumoniae competence system.
+- Research project focused on the *S. pneumoniae* competence system.
 
 - Worked with potentially pathogenic samples in a CL-2 lab
 
@@ -311,6 +314,8 @@ Sharing Knowledge and preparation for the final year exams of French and English
 
 <!-- This is the Skills Section -->
 
+
+<!-- Languages -->
 <div class = "grid">
  <div class="section">Specific Skills</div>
  <div class="item"> Languages </div>
@@ -324,47 +329,44 @@ Sharing Knowledge and preparation for the final year exams of French and English
  
  </div>
 
+<!-- Data Science -->
 <div class = "grid">
  <div class="item"> Data science </div>
  <div class ="description"> 
- 
- <details>
- <summary> details of skills & softwares</summary>
-<h5>R</h5> 
-Strong R skills for data sciences especially using Pipes and the Tidyverse. Experience of R markdown, R shiny, R Blogdown. 
 
-Strong R skills for Epidemiology analysis using resources from R4Epi, RECON and Epidemiologist R Handbook packages. I have used R to generate analysis report, graph-making and dashboards for data analysis
+<h5>R</h5> 
+Strong R skills for data sciences especially using Pipes and the Tidyverse. Strong experience of R markdown, R shiny, R Blogdown. 
+
+Strong R skills for Epidemiology analysis using resources from R4Epi, RECON and Epidemiologist R Handbook packages. I have used R to generate analysis report, graph-making and dashboards for data analysis.
 
 <h5>SQL</h5>
 Experience of SQL querying especially with postgres SQL. I have used it to as a way of centralising data, and connected my databases to a R shiny dashboard. 
 
 <h5>HTML/CSS</h5>
 Experience of HTML to modify a markdown file, and create websites using R. CSS stylesheet created to customise the Markdown documents, shiny App and website.
- </details>
+
  </div>
  </div>
  
+<!-- Spatial Data Science -->
  <div class = "grid">
  <div class="item"> Spatial Data science </div>
  <div class ="description"> 
- 
- <details>
- <summary>details of skills & softwares</summary>
+
 <h5>R</h5> 
-Strong R skills for spatial displaying, and analysis, including use and analysis of
-remote-sensing data. 
+Strong R skills for spatial displaying, and analysis, including use and analysis of remote-sensing data. 
 
 <h5>Other Softwares </h5> 
 
-Very Good understanding of ArcGIS, QGIS, GeoDa and
-SatScan used in severl projects.
+Very Good understanding of ArcGIS, QGIS, GeoDa and SatScan used in several projects.
 
 <h5>Illustrator</h5>
 Used for final map-making refinements. 
-</details>
+
  </div>
  </div>
  
+<!-- Other softwares -->
  <div class = "grid">
  <div class="item"> Other Softwares of Interests</div>
  <div class ="description"> 
@@ -375,44 +377,27 @@ Used for final map-making refinements.
  
  </div>
  </div>
- 
- 
- <div class = "grid">
- <div class="item"> Laboratory work</div>
- <div class ="description"> 
- 
-- Manipulation of pathogenic samples - BSC-L2 / BSC-L3.
-- Work under the glovebox for manipulation of Class-4 pathogens
-- diagnostics workflow: Sample reception/inactivation, RNA extraction, MM preparation, q-RT-PCR, result interpretation
-- serology workflow: ELISA and IFA testing. 
- 
- </div>
- </div>
- 
-<div class = "grid">
-<div class="item"> Field Work & Deployments</div>
-<div class ="description"> 
- 
-- item 1
 
-- item 2
- 
- </div>
- </div>
- 
+<!-- Diplomas and trainings -->
 <div class = "grid">
 <div class="item"> Diplomas & Trainings</div>
 <div class ="description"> 
+
+**European Mobile Laboratory Training Certificate**
  
 Mandatory Online Certificates for **deployment under WHO/GOARN**:
 
+<details> 
+<summary> see list of certificates</summary>
 - BSAFE
 - GO certificate for Ebola response
 - Serve with Pride
 - Prevention of Harassment and Abuse by UN personnel - Working harmoniously
 - UN Human Right Responsibilities
 - GOARN tier 1 course
+</details>
 
+<br>
 **Online training for Ethic Research- LSHTM** 
 
 Short online course, with online examination about the Ethics in Science, with a emphasis on Epidemiological research. Resulted in a Certificate of Ethics Research.
@@ -437,7 +422,7 @@ participated in short-course on the introduction to GIS and Spatial Analysis, us
  <div class="section">Interests</div>
  <div class="description">
  
-**Leadership**: Captain of IC Fencing Men’s second Team.
+**Captain of IC Fencing Men’s second Team**.
 
 - 16 years of Fencing, participated in National and International competitions (France).
  
@@ -446,8 +431,9 @@ and South-Eastern 2A league, got promoted to South-Eastern 1A league.
 
 - Organisation of Trainings and Travels.
  
-International PADI license. Level 1, 25+ scuba diving and nocturnal divings. Amateur of sailing, freediving
-and spearfishing.
+**International PADI license**. Level 1, 25+ scuba diving and nocturnal divings. 
+
+Amateur of sailing, freediving and spearfishing.
 
 Historical, Geographic, Philosophical and Scientific readings.
 

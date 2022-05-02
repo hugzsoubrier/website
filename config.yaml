@@ -40,7 +40,7 @@ params:
                 url: /vitae/
               - name: Portfolio
                 url: /portfolio/
-
-    
-
+                
+assets: 
+  favicon: /apple-touch-icon.png
     
