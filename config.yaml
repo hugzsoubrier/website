@@ -31,7 +31,7 @@ params:
         enabled: true
         title: "Hugo Soubrier, MSc"
         subtitle: "🦟Infectious diseases | 🌴Nature | 🗺Geography | 📖Reading"
-        imageUrl: "img/volcano.PNG" 
+        imageUrl: img/volcano.PNG
         imageWidth: 120
         imageHeight: 120
 
