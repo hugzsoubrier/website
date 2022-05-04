@@ -27,7 +27,7 @@ span.title {
 
 .grid {  
   display: grid;    
-  grid-template-columns: [first] 150px [line2] auto [line3] auto [line-4] 190px [end];
+  grid-template-columns: [first] 15% [line2] auto [line3] auto [line-4] auto [end];
   grid-template-rows: [row1-start] auto [row1-end] auto [third-line] auto [last-line];
   grid-template-areas:
     "section item org date"
