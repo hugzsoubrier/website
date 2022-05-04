@@ -2,7 +2,7 @@
 
 p.intro::first-letter {
   
-  color: #A52A2A;
+  color: #086AB5;
   float: left;
   font-weight: bold;
   font-size: 6em;
@@ -30,8 +30,7 @@ details {
   row-gap: 5px ;
 } 
 
-.grid > div { 
-  background: #FBEEE6; 
+.grid > div {
   padding: 10px;
 }
 

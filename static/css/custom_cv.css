@@ -14,8 +14,6 @@ span.title {
   font-size: 35px;  
   font-weight: bold;
   font-family: Monaco;
-  
-  color: #000000;
 }
 
 .intro { 
@@ -36,10 +34,6 @@ span.title {
   row-gap: 5px ; 
   
   background:linear-gradient(#D5D8DC  ,#D5D8DC  ) 150px/1.5px 100% no-repeat;
-}
-
-.grid > div {
-  background: #FFFFFF;
 } 
 
 /* #FBEEE6 */
