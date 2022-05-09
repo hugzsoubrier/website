@@ -1,0 +1,14 @@
+---
+title: Publications
+author:
+date: '2022-04-07'
+slug: []
+categories: []
+tags: []
+---
+
+<html>  
+<link rel="stylesheet" href="/css/custom_publications.css" />
+</html>
+
+<span class="authors">Soubrier H, Bangura U, Hoffmann C, Olayemi A, Adesina AS, Günther S, Oestereich L, Fichet-Calvet E.</span> <span class="title">Detection of Lassa Virus-Reactive IgG Antibodies in Wild Rodents: Validation of a Capture Enzyme-Linked Immunological Assay. </span> <span class="journal">Viruses. 2022; 14(5):993</span>. <a class="doi">https://doi.org/10.3390/v14050993</a> 
