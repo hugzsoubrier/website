@@ -12,20 +12,14 @@
 }
 
 .title {
-  font-weight: 600; 
+  font-weight: 300; 
   
 }
 
 .journal {
   font-weight: 200;
-} 
-
-a::link { 
-  
-  text-decoration: none;
-  
 }
-
+ 
 .doi {
   text-decoration: none;
   cursor: pointer;

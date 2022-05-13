@@ -5,6 +5,8 @@
   --main-width: 1000px;
 }
 
+a {text-decoration: none;}
+
 /*cv titles */
    
 span.title {
@@ -29,7 +31,7 @@ span.title {
   grid-template-rows: [row1-start] auto [row1-end] auto [third-line] auto [last-line];
   grid-template-areas:
     "section item org date"
-    ". description description description";
+    "section description description description";
   column-gap: 5px; 
   row-gap: 5px ; 
   
@@ -118,6 +120,31 @@ details[open] summary ~ * {
   100% {
     opacity: 1;
   }
+}
+
+li > .publication-doi {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 250;
+  color: black;
+  position: relative;
+}
+
+li >.publication-doi::after{
+  content: "";
+  background: #D0ECE7     ;
+  width: 100% + 5px;
+  position: absolute;
+  bottom: .5px;
+  height: 5px;
+  left: -2px; 
+  right: 0;
+  z-index:-1;
+	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+li > .publication-doi:hover::after{
+	height: calc(100%)
 }
 
 

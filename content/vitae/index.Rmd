@@ -304,8 +304,7 @@ Sharing Knowledge and preparation for the final year exams of French and English
  <div class="section">Publications</div>
  <div class="item">
  
- - First publication
- - Second Publications
+- Soubrier H, Bangura U, Hoffmann C, Olayemi A, Adesina AS, Günther S, Oestereich L, Fichet-Calvet E. **Detection of Lassa Virus-Reactive IgG Antibodies in Wild Rodents: Validation of a Capture Enzyme-Linked Immunological Assay**. Viruses. 2022; 14(5):993. <a href="https://www.mdpi.com/1999-4915/14/5/993/htm" class="publication-doi">https://doi.org/10.3390/v14050993 </a>
  
  </div>
  </div>
@@ -326,7 +325,6 @@ Sharing Knowledge and preparation for the final year exams of French and English
 - Spanish : very good comprehension and good speaking ability
  
  </div>
- 
  </div>
 
 <!-- Data Science -->
@@ -334,10 +332,22 @@ Sharing Knowledge and preparation for the final year exams of French and English
  <div class="item"> Data science </div>
  <div class ="description"> 
 
-<h5>R</h5> 
+<h5>General R</h5> 
 Strong R skills for data sciences especially using Pipes and the Tidyverse. Strong experience of R markdown, R shiny, R Blogdown. 
 
 Strong R skills for Epidemiology analysis using resources from R4Epi, RECON and Epidemiologist R Handbook packages. I have used R to generate analysis report, graph-making and dashboards for data analysis.
+
+<h5> Rshiny </h5>
+
+I have been developing a R shiny-dashboard that will act as a platform for our African partners to follow their laboratory activities and generate reports. 
+
+<details> 
+<summary>
+See details
+</summary>
+This dashboard is a tool developped as part of my activities within the Africa team at BNITM. The dashboars is a tool that could be used by our African partners to filter their databases, visualize their laboratory activities (number and type of sample received, kind and number of tests performed ect…). The dashboard allows the user to export these visualizations as a one-page lab-activities reports for communications to external partners. Finally, the dashboard can be used to focus on pathogen-specific activities, and provide the user with histograms of positives/negative results for specific pathogens tested in the labs. The dashboard also dives into the positives samples by providing a mapping of the positive cases at the sub-prefectural/prefectural and regional levels, as well as a distribution of the Ct-values. This work is still under development but my aim is to make it available to the local partners online. Due to sensitive data, I cannot show this project yet, but I am working on making it neutral and host it on my github for future references. If you are interested, I am more than happy to discuss about it. 
+</details>
+
 
 <h5>SQL</h5>
 Experience of SQL querying especially with postgres SQL. I have used it to as a way of centralising data, and connected my databases to a R shiny dashboard. 
@@ -354,7 +364,7 @@ Experience of HTML to modify a markdown file, and create websites using R. CSS s
  <div class ="description"> 
 
 <h5>R</h5> 
-Strong R skills for spatial displaying, and analysis, including use and analysis of remote-sensing data. 
+Strong R skills for spatial displaying, and analysis, including use and analysis of remote-sensing data.
 
 <h5>Other Softwares </h5> 
 
@@ -378,13 +388,28 @@ Used for final map-making refinements.
  </div>
  </div>
 
+<hr>
+
 <!-- Diplomas and trainings -->
 <div class = "grid">
-<div class="item"> Diplomas & Trainings</div>
+<div class="section"> Diplomas & Trainings</div>
 <div class ="description"> 
 
-**European Mobile Laboratory Training Certificate**
- 
+**EM Laboratory Training Certificate**
+
+One week training for deployment under <a href="https://www.emlab.eu">European Mobile laboratory</a>
+
+<details> 
+<summary>
+more details
+</summary>
+- Theoretical and practical training for on-site deployment of the European Mobile laboratory. 
+- setting up field Rapid response diagnostics laboratory
+- Setting up and work under Gloveboxes for Class-4 pathogen handling
+- Diagnostic Laboratory workflow: Sample reception, inactivation, extraction, MasterMix and qRT-PCR, data validation entry and reporting. 
+ </details>
+\ 
+
 Mandatory Online Certificates for **deployment under WHO/GOARN**:
 
 <details> 
@@ -398,6 +423,7 @@ Mandatory Online Certificates for **deployment under WHO/GOARN**:
 </details>
 
 <br>
+
 **Online training for Ethic Research- LSHTM** 
 
 Short online course, with online examination about the Ethics in Science, with a emphasis on Epidemiological research. Resulted in a Certificate of Ethics Research.
@@ -409,7 +435,7 @@ participated in short-course on the introduction to GIS and Spatial Analysis, us
 
 **LonWHO 2019** 
 
-3 days WHO simulation conference. Themed on “Conflict and Health”. Represented the pharmaceutical company PFIZER, which approval was required for countries resolution. Lobby work to ensure the company interest are reflected in resolutions tackling health aspects in conflict zone. The conference gave a great understanding of diplomacy, and global health governance.
+3 days WHO Health Assembly simulation conference. Themed on “Conflict and Health”. Represented the pharmaceutical company PFIZER, which approval was required for countries resolution. Lobby work to ensure the company interest are reflected in resolutions tackling health aspects in conflict zone. The conference gave a great understanding of diplomacy, and global health governance.
 
  </div>
  </div>
