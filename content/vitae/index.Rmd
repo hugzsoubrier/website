@@ -345,7 +345,9 @@ I have been developing a R shiny-dashboard that will act as a platform for our A
 <summary>
 See details
 </summary>
-This dashboard is a tool developped as part of my activities within the Africa team at BNITM. The dashboars is a tool that could be used by our African partners to filter their databases, visualize their laboratory activities (number and type of sample received, kind and number of tests performed ect…). The dashboard allows the user to export these visualizations as a one-page lab-activities reports for communications to external partners. Finally, the dashboard can be used to focus on pathogen-specific activities, and provide the user with histograms of positives/negative results for specific pathogens tested in the labs. The dashboard also dives into the positives samples by providing a mapping of the positive cases at the sub-prefectural/prefectural and regional levels, as well as a distribution of the Ct-values. This work is still under development but my aim is to make it available to the local partners online. Due to sensitive data, I cannot show this project yet, but I am working on making it neutral and host it on my github for future references. If you are interested, I am more than happy to discuss about it. 
+
+This dashboard is a tool developed as part of my activities within the Africa team at BNITM. It could be used by our African partners to filter their databases, visualize their laboratory activities (number and type of sample received, kind and number of tests performed ect…). The dashboard allows the user to export these visualizations as a one-page lab-activities reports for communications to external partners. Finally, the dashboard can be used to focus on pathogen-specific activities, and provide the user with histograms of positives/negative results for specific pathogens tested in the labs. The dashboard also dives into the positives samples by providing a mapping of the positive cases at the sub-prefectural/prefectural and regional levels, as well as a distribution of the Ct-values. This work is still under development but my aim is to make it available to the local partners online. Due to sensitive data, I cannot show this project yet, but I am working on making it neutral and host it on my github for future references. If you are interested, I am more than happy to discuss about it. 
+
 </details>
 
 
@@ -408,7 +410,6 @@ more details
 - Setting up and work under Gloveboxes for Class-4 pathogen handling
 - Diagnostic Laboratory workflow: Sample reception, inactivation, extraction, MasterMix and qRT-PCR, data validation entry and reporting. 
  </details>
-\ 
 
 Mandatory Online Certificates for **deployment under WHO/GOARN**:
 
@@ -424,12 +425,12 @@ Mandatory Online Certificates for **deployment under WHO/GOARN**:
 
 <br>
 
-**Online training for Ethic Research- LSHTM** 
+**Online training for Ethic Research - LSHTM** 
 
 Short online course, with online examination about the Ethics in Science, with a emphasis on Epidemiological research. Resulted in a Certificate of Ethics Research.
  
  
-**GIS course at LSHTM**
+**GIS course - LSHTM**
 
 participated in short-course on the introduction to GIS and Spatial Analysis, using ARC-GIS.
 

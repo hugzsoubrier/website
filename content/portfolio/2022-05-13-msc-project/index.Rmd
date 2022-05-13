@@ -1,0 +1,10 @@
+---
+title: 'MSc Project '
+author: Hugo Soubrier
+date: '2022-05-13'
+slug: []
+categories: []
+tags: []
+---
+
+This is a Rmarkdown document that i put together to summarise the work that I have done during my MSc project at LSHTM. The project was named: **Spatial distribution and environmental factors associated with the _Anopheles_ mosquitoes on the Bijagós Archipelago, Guinea-Bissau** 
