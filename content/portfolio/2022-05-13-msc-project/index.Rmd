@@ -8,3 +8,24 @@ tags: []
 ---
 
 This is a Rmarkdown document that i put together to summarise the work that I have done during my MSc project at LSHTM. The project was named: **Spatial distribution and environmental factors associated with the _Anopheles_ mosquitoes on the Bijagós Archipelago, Guinea-Bissau** 
+
+This ``.Rmd`` file was put together 2 years after the project when I wanted to have a look back at my work and coding methods. This was my one of my first big project on R, and many things could have have been improved or at least done more efficiently. 
+
+## The project 
+
+
+## The data
+
+
+
+
+
+
+
+
+
+
+
+
+
+

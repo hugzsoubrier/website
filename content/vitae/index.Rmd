@@ -35,7 +35,7 @@ output:
   <div class="item">MSc Control of Infectious Diseases</div>
   <div class="org">London School of Hygiene and Tropical Medicine</div>
   <div class="date">2019 - 2020</div>
-  <div class="description">
+  <div class="description"> 
   
 Multi-disciplinary course aiming at bridging disciplines to study and control infectious diseases.\
 **Merit Distinction** - GPA: 4.01/5 (80,2% Upper-First-class honours).

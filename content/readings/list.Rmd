@@ -1,0 +1,102 @@
+---
+title: "List of books"
+author: 
+date: "4/11/2022"
+output: html_document
+---
+
+<html>  
+<link rel="stylesheet" href="/css/custom_books.css" />
+</html>
+
+<br>
+
+I keep this list of books that I have read for my own references. 
+
+<div class="grid">
+
+<div class="reference"> Patrick Deville, Peste et Choléra </div>
+<div class="description">description</div>
+ 
+</div>
+
+<div class="grid">
+
+<div class="reference"> Tristes Tropiques - C. Lévis Strauss  </div>
+<div class="description">description</div>
+
+</div>
+
+
+- 
+
+- Brief History of Time - S. Hawking
+
+- Prisoners of Geography-T. Marshall
+
+- The rules of Contagions-A. Kucharski
+
+- Les derniers rois de Thulés-J. Malaurie
+
+- Other Minds- Peter Godfrey smith
+
+- No Time to lose- Peter Piot
+
+- Why we sleep- Matthew Walker
+
+- Digital Minimalism- Cal Newport 
+
+- L’Erebus - Michael Palin 
+
+- Le désert des Déserts- W. Thesiger
+
+- Magellan - Stefan Zweig
+
+- Expert - Roger Kneebone 
+
+- Wayfinding - Michael Bond
+
+- Introduction au Pensées de Marc-Auréle- P. Hadot
+
+- The Life and Death of Ancient Cities- Greg Woolf
+
+- Kindred, Neanderthal Life, Love, Death and Art - R. Wragg Sykes 
+
+- Fièvre de Lassa- Dr. Saltzmann
+
+- Kampuchéa - Patrick Deville 
+
+- Un été avec Homère - Sylvain Tesson
+
+- Equatoria - Patrick Deville 
+
+- Race et Histoire - Claude Levi-Strauss 
+
+- L’insoutenable légèreté de l’être - Milan Kundera 
+
+- Le courage de la Nuance - Jean Birnbaum
+
+- Homo Domesticus - James Scott
+
+- Le bateau de Palmyre - Maurice Sartre 
+
+- Petit Éloge de l’Anarchisme - James Scott
+
+- Fouché- Stefan Sweig
+
+
+
+
+PHILOSOPHIE 
+
+- Epicure. Lettre à Ménécée 
+
+- Lucrèce. De la nature 
+
+- Les pensées de marc Auréle 
+
+- Sénèque. De la brièveté de la Vie
+
+
+
+
