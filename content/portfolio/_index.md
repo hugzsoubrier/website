@@ -7,4 +7,4 @@ categories: []
 tags: []
 ---
 
-This is the section showing all the coding project I have been working on. And tips for myself. 
+This section will be showing all the coding project I have been working on. I am currently re-coding and organising the projects so they can be nicely displayed. 

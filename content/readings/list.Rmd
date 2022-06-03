@@ -24,7 +24,6 @@ I keep this list of books that I have read for my own references.
 
 <div class="reference"> Tristes Tropiques - C. Lévis Strauss  </div>
 <div class="description">description</div>
-
 </div>
 
 
