@@ -1,9 +1,11 @@
+
+
 theme: "hugo-PaperMod"
-baseURL: http://hugzsoubrier.com/
+baseURL: http://hugzsoubrier.com
 languageCode: en-us
 title: Home
-menu: 
-  main: 
+menu:
+  main:
     - name: About
       url: /about/
     - name: C.V.
@@ -14,24 +16,24 @@ menu:
       url: /portfolio/
     - name: Reading List
       url: /readings/
-      
-boolean: false          
+
+boolean: false
 params:
  socialIcons:
- 
+
      - name: email
        url: soubrierhugo@gmail.com
      - name: twitter
        url: "https://twitter.com/soubrier_hugo"
-       
+
      - name: github
        url: "https://github.com/hugzsoubrier"
-    
+
  profileMode:
         enabled: true
         title: "Hugo Soubrier, MSc"
         subtitle: "🦟Infectious diseases | 🌴Nature | 🗺Geography | 📖Reading"
-        imageUrl: "img/volcano.png"
+        imageUrl: "img/volcano.PNG"
         imageWidth: 120
         imageHeight: 120
 
@@ -40,7 +42,6 @@ params:
                 url: /vitae/
               - name: Portfolio
                 url: /portfolio/
-                
-assets: 
+
+assets:
   favicon: /apple-touch-icon.png
-    
