@@ -68,11 +68,14 @@ output:
 <script src="{{< blogdown/postref >}}index_files/leaflet-binding/leaflet.js"></script>
 
 
+<html>
+<link rel="stylesheet" href="/css/custom_publications.css" />
+</html>
 <div id="introduction" class="section level2">
 <h2><strong>Introduction</strong></h2>
-<p>This document is a fake epidemiological report using data provided by the <a href="https://appliedepi.org">Applied Epi</a> group using a fake COVID linelist (<a href="https://github.com/appliedepi/epiRhandbook_eng">data available on Github</a>).</p>
-<p>I have used these data to create various descriptive analysis. Most of the work here is inspired from the great <a href="https://www.epirhandbook.com/en/">Epidemiologist R handbook</a>, but also from other resources that I have used to learn R. I use pipes and all of the tidyverse has I have learned in: <a href="https://r4ds.had.co.nz/index.html">R for Data Science</a> and other resources available on <a href="https://www.rstudio.com/resources/books/">Rstudio website</a>.</p>
-<p>For data visualisation I have decided to focuss on interactive graphs using the <code>highcharter</code> package a wrapper for the <a href="https://jkunst.com/highcharter/index.html">highchart library</a>. I have been working with highcharter for some time now but I used it as an opportunity to learn more, and apply it to a real life scenarios. I do really enjoy the adds-on of interactivity in data analysis.</p>
+<p>This document is a fake epidemiological report using data provided by the <span class="doi"> <a href = "https://appliedepi.org">Applied Epi</a></span> group using a fake COVID linelist <span class="doi"> <a href = "https://github.com/appliedepi/epiRhandbook_eng">data available on GitHub Epi</a></span>.</p>
+<p>I have used these data to create various descriptive analysis. Most of the work here is inspired from the great <span class="doi"> <a href = "https://www.epirhandbook.com/en/">Epidemiologist R handbook</a></span>, but also from other resources that I have used to learn R. I use pipes and all of the tidyverse has I have learned in: <span class="doi"> <a href = "https://r4ds.had.co.nz/index.html">R for data science</a></span> and other resources available on <span class="doi"> <a href = "https://www.rstudio.com/resources/books/">R Studio website</a></span>.</p>
+<p>For data visualisation I have decided to focuss on interactive graphs using the <code>highcharter</code> package a wrapper for the <span class="doi"> <a href = "https://jkunst.com/highcharter/index.html">Highcharts Library</a></span>=. I have been working with highcharter for some time now but I used it as an opportunity to learn more, and apply it to a real life scenarios. I do really enjoy the adds-on of interactivity in data analysis.</p>
 <p>For Epidemiological analysis/description I have used what I knew from the various packages regarding epi:
 <code>linelist</code>, <code>epikit</code>, <code>incidence</code>, <code>sitrep</code> …</p>
 <p>For spatial analysis, I have chosen to get out of <code>ggplot</code>, or <code>tmap</code> which I have used a lot, to focuss on <code>leaflet</code> as it was once more an occasion to use interactivity in real life scenario for data visualisation and I think this is very powerful.</p>
@@ -102,7 +105,7 @@ output:
 <center>
 <table class="table table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-(#tab:Sex vs age group distribution)Distribution of cases per <b>Age groups</b> and <b>case gender</b>
+<span id="tab:SexAgeDistribution">Table 1: </span>Distribution of cases per <b>Age groups</b> and <b>case gender</b>
 </caption>
 <thead>
 <tr>
@@ -343,7 +346,7 @@ unknown
 <div id="age-sex-pyramid" class="section level4">
 <h4>Age-Sex pyramid</h4>
 <center>
-<img src="{{< blogdown/postref >}}index_files/figure-html/age_pyramid-1.png" width="2100" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/age_pyramid-1.png" width="1750" style="display: block; margin: auto;" />
 </center>
 </div>
 </div>
@@ -356,7 +359,7 @@ unknown
 <center>
 <table class="table table-hover" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-1">Table 1: </span>Hospitalisation rates per <b>Age groups</b>
+<span id="tab:HospRateAgeGroups">Table 2: </span>Hospitalisation rates per <b>Age groups</b>
 </caption>
 <thead>
 <tr>
@@ -537,11 +540,11 @@ unknown
 </div>
 <div id="sex" class="section level4">
 <h4>Sex</h4>
-Hopsitalisations rates remained similar between <strong>Male</strong> ( 11.22% (CI 10.82–11.64) ) and <strong>Female</strong> ( 11.22% (CI 10.82–11.64) ).
+Hospitalisations rates remained similar between <strong>Male</strong> ( 11.22% (CI 10.82–11.64) ) and <strong>Female</strong> ( 11.22% (CI 10.82–11.64) ).
 <center>
 <table class="table table-hover" style="margin-left: auto; margin-right: auto;">
 <caption>
-(#tab:hospitalisation rates per Sex)Hospitalisation rates per <b> Sex </b>
+<span id="tab:HospRateSex">Table 3: </span>Hospitalisation rates per <b> Sex </b>
 </caption>
 <thead>
 <tr>
@@ -625,9 +628,10 @@ unknown
 <p>Importantly, 123 (0.1%) cases are <strong>under review</strong>, while 42302 (51.5%) have unknown <strong>outcome</strong>.</p>
 <div id="age-group-1" class="section level4">
 <h4>Age group</h4>
+<center>
 <table class="table table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-(#tab:CFR per age group)Distribution of COVID <b>CFR</b> per <b>Age group</b>
+<span id="tab:CFRAgeGroup">Table 4: </span>Distribution of COVID <b>CFR</b> per <b>Age group</b>
 </caption>
 <thead>
 <tr>
@@ -804,6 +808,7 @@ unknown
 </tr>
 </tbody>
 </table>
+</center>
 <p><strong>&lt; 10</strong> was the age group with the lowest CFR: 0.00% (CI 0.00–0.24). While <strong>70 +</strong> was the age group with the greatest CFR: 30.79% (CI 29.13–32.50)</p>
 </div>
 <div id="sex-1" class="section level4">
@@ -811,7 +816,7 @@ unknown
 <center>
 <table class="table table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-(#tab:CFR per sex)Distribution of COVID <b>CFR</b> per <b>Sex</b>
+<span id="tab:CFRSex">Table 5: </span>Distribution of COVID <b>CFR</b> per <b>Sex</b>
 </caption>
 <thead>
 <tr>
@@ -895,7 +900,7 @@ unknown
 <center>
 <table class="table table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-(#tab:table symptoms distribution)Distribution of <b>symptoms</b>
+<span id="tab:SymDistribution">Table 6: </span>Distribution of <b>symptoms</b>
 </caption>
 <thead>
 <tr>
@@ -1236,7 +1241,7 @@ unknown
 <h3>Cases map</h3>
 <p>Cases have been detected throughout Fulton county, especially in major cities.</p>
 <center>
-<img src="{{< blogdown/postref >}}index_files/figure-html/cases%20map-1.png" width="2100" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/cases%20map-1.png" width="2100" style="display: block; margin: auto;" />
 </center>
 </div>
 <div id="chloropleths-maps" class="section level3">
@@ -1261,7 +1266,7 @@ unknown
 <h3>Months and week</h3>
 <p>Maps of big regions of Fulton county by Week of Outbreak.</p>
 <center>
-<img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-1.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-2.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-3.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-4.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-5.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-6.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-7.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-8.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-9.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-10.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-11.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-12.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-13.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-14.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-15.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-16.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-17.png" width="2100" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-18.png" width="2100" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-1.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-2.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-3.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-4.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-5.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-6.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-7.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-8.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-9.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-10.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-11.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-12.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-13.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-14.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-15.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-16.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-17.png" width="1750" style="display: block; margin: auto;" /><img src="{{< blogdown/postref >}}index_files/figure-html/chloropleth%20for%20loop-18.png" width="1750" style="display: block; margin: auto;" />
 </center>
 </div>
 </div>

@@ -10,13 +10,17 @@ output:
     toc_depth: 5
 ---
 
+<html>  
+<link rel="stylesheet" href="/css/custom_publications.css" />
+</html>
+
 ```{r set up, include = F}
 
 knitr::opts_chunk$set(echo = FALSE,       
                       error = TRUE,
                       message = FALSE, 
-                      warning = F)
-
+                      warning = F, 
+                      fig.align = "center")
 ```
 
 ```{r library loading}
@@ -172,11 +176,11 @@ inci <- incidence(clean_data$pos_sampledt_FALSE, interval = "monday week")
 
 ```
 
-This document is a fake epidemiological report using data provided by the [Applied Epi](https://appliedepi.org) group using a fake COVID linelist ([data available on Github](https://github.com/appliedepi/epiRhandbook_eng)). 
+This document is a fake epidemiological report using data provided by the <span class="doi"> <a href = "https://appliedepi.org">Applied Epi</a></span> group using a fake COVID linelist <span class="doi"> <a href = "https://github.com/appliedepi/epiRhandbook_eng">data available on GitHub Epi</a></span>. 
 
-I have used these data to create various descriptive analysis. Most of the work here is inspired from the great [Epidemiologist R handbook](https://www.epirhandbook.com/en/), but also from other resources that I have used to learn R. I use pipes and all of the tidyverse has I have learned in: [R for Data Science](https://r4ds.had.co.nz/index.html) and other resources available on [Rstudio website](https://www.rstudio.com/resources/books/). 
+I have used these data to create various descriptive analysis. Most of the work here is inspired from the great <span class="doi"> <a href = "https://www.epirhandbook.com/en/">Epidemiologist R handbook</a></span>, but also from other resources that I have used to learn R. I use pipes and all of the tidyverse has I have learned in: <span class="doi"> <a href = "https://r4ds.had.co.nz/index.html">R for data science</a></span> and other resources available on <span class="doi"> <a href = "https://www.rstudio.com/resources/books/">R Studio website</a></span>.
 
-For data visualisation I have decided to focuss on interactive graphs using the ``highcharter`` package a wrapper for the [highchart library](https://jkunst.com/highcharter/index.html). I have been working with highcharter for some time now but I used it as an opportunity to learn more, and apply it to a real life scenarios. I do really enjoy the adds-on of interactivity in data analysis.
+For data visualisation I have decided to focuss on interactive graphs using the ``highcharter`` package a wrapper for the <span class="doi"> <a href = "https://jkunst.com/highcharter/index.html">Highcharts Library</a></span>=. I have been working with highcharter for some time now but I used it as an opportunity to learn more, and apply it to a real life scenarios. I do really enjoy the adds-on of interactivity in data analysis.
 
 For Epidemiological analysis/description I have used what I knew from the various packages regarding epi: 
 ``linelist``, ``epikit``, ``incidence``, ``sitrep`` ... 
@@ -211,7 +215,7 @@ There is `r fmt_count(clean_data, case_gender == "unknown")` cases with missing 
 
 ### Age and Sex distributions
 <center>
-```{r Sex vs age group distribution }
+```{r SexAgeDistribution }
 
 clean_data %>% 
   
@@ -236,7 +240,7 @@ clean_data %>%
 #### Age-Sex pyramid
 
 <center>
-```{r age_pyramid, dpi = 300}
+```{r age_pyramid, dpi = 250}
 
 clean_data %>% 
   
@@ -277,7 +281,7 @@ hosp_rate_age_cat <- case_fatality_rate_df(filter(clean_data, hospitalized !="un
 The age group, **`r slice_tail(arrange(hosp_rate_age_cat, hosp_rate))$age_cat`** had the greatest hospitalisation rate of `r fmt_ci_df(slice_tail(arrange(hosp_rate_age_cat, hosp_rate)), e=4, l=5, u=6)`.
 
 <center>
-```{r}
+```{r HospRateAgeGroups} 
 
 #show hosp rate per age_cat table
 hosp_rate_age_cat %>% 
@@ -296,7 +300,9 @@ hosp_rate_age_cat %>%
         align = "c",
         digits = 2) %>%
   
-  kable_styling("hover") 
+  kable_styling("hover", 
+                full_width = T, 
+                position = "center") 
 
 ```
 </center>
@@ -316,9 +322,9 @@ hosp_rate_sex <- case_fatality_rate_df(filter(clean_data, hospitalized !="unknow
          "Sex" = case_gender)
 ```
 
-Hopsitalisations rates remained similar between **Male**  ( `r fmt_ci_df(filter(hosp_rate_sex, Sex == "male"), 4, 5, 6 )` ) and **Female** ( `r fmt_ci_df(filter(hosp_rate_sex, Sex == "male"), 4, 5, 6 )` ). 
+Hospitalisations rates remained similar between **Male**  ( `r fmt_ci_df(filter(hosp_rate_sex, Sex == "male"), 4, 5, 6 )` ) and **Female** ( `r fmt_ci_df(filter(hosp_rate_sex, Sex == "male"), 4, 5, 6 )` ). 
 <center>
-```{r hospitalisation rates per Sex}
+```{r HospRateSex}
 
 options(kableExtra.html.bsTable = TRUE)
 
@@ -348,7 +354,9 @@ Using only cases with known outcome, the Overall CFR is of `r fmt_ci_df(case_fat
 Importantly, `r fmt_count(clean_data, died_covid == "under review")` cases are **under review**, while `r fmt_count(clean_data, died_covid == "unknown")` have unknown **outcome**. 
 
 #### Age group 
-```{r CFR per age group}
+
+<center>
+```{r CFRAgeGroup}
 age_cat_cfr <- clean_data %>% 
   
     #filter out all cases with no outcome info
@@ -378,14 +386,15 @@ age_cat_cfr %>%
         digits = 2) %>%
   
   kable_styling("hover", 
-                full_width = F) 
+                full_width = F, 
+                position = "center") 
 ```
-
+</center>
 **`r filter(filter(age_cat_cfr, age_cat !="unknown"), cfr == min(age_cat_cfr$cfr))$age_cat`** was the age group with the lowest CFR: `r fmt_ci_df(filter(filter(age_cat_cfr, age_cat !="unknown"), cfr == min(age_cat_cfr$cfr)), e = 4, l =5, u = 6)`. While **`r filter(filter(age_cat_cfr, age_cat !="unknown"), cfr == max(age_cat_cfr$cfr))$age_cat`** was the age group with the greatest CFR: `r fmt_ci_df(filter(filter(age_cat_cfr, age_cat !="unknown"), cfr == max(age_cat_cfr$cfr)), e = 4, l =5, u = 6) `
 
 #### Sex 
 <center>
-```{r CFR per sex }
+```{r CFRSex }
 
 clean_data %>% 
   #filter out all cases with no outcome info
@@ -417,7 +426,7 @@ clean_data %>%
 Amongst all cases, symptoms were distributed as follow:
 
 <center>
-```{r table symptoms distribution}
+```{r SymDistribution}
 clean_data %>% 
   tab_linelist(sym_vars) %>% 
   
@@ -1262,7 +1271,7 @@ At the peak of the outbreak: **`r peak`**, the region with the greatest Attack r
 Maps of big regions of Fulton county by Week of Outbreak. 
 
 <center>
-```{r chloropleth for loop, dpi = 300}
+```{r chloropleth for loop, dpi = 250}
 #create a function that filters data on month and then plot a chloropleth
 
 month_week_chloro <- function(data_ar, year_month){
