@@ -1,7 +1,7 @@
 ---
 title: "Epidemiological Report - COVID-19"
-author: "Hugo Soubrier"
-date: "09/06/2022"
+author: Hugo Soubrier
+date: '09/06/2022'
 output: 
   html_document:
     keep_md: true
@@ -11,7 +11,7 @@ output:
 ---
 
 <html>  
-<link rel="stylesheet" href="/css/custom_publications.css" />
+<link rel="stylesheet" href="/css/custom_fake_report.css" />
 </html>
 
 ```{r set up, include = F}
@@ -176,7 +176,7 @@ inci <- incidence(clean_data$pos_sampledt_FALSE, interval = "monday week")
 
 ```
 
-This document is a fake epidemiological report using data provided by the <span class="doi"> <a href = "https://appliedepi.org">Applied Epi</a></span> group using a fake COVID linelist <span class="doi"> <a href = "https://github.com/appliedepi/epiRhandbook_eng"> data available on GitHub Epi </a></span>. 
+This document is a fake epidemiological report using data provided by the <span class="doi"> <a href = "https://appliedepi.org">Applied Epi</a></span> group using a fake COVID linelist <span class="doi"> <a href = "https://github.com/appliedepi/epiRhandbook_eng">data available on GitHub Epi </a></span>. 
 
 I have used these data to create various descriptive analysis. Most of the work here is inspired from the great <span class="doi"> <a href = "https://www.epirhandbook.com/en/">Epidemiologist R handbook</a></span>, but also from other resources that I have used to learn R. I use pipes and all of the tidyverse has I have learned in: <span class="doi"> <a href = "https://r4ds.had.co.nz/index.html">R for data science</a></span> and other resources available on <span class="doi"> <a href = "https://www.rstudio.com/resources/books/">R Studio website</a></span>.
 
@@ -214,8 +214,9 @@ There is `r fmt_count(clean_data, case_gender == "unknown")` cases with missing 
 
 
 ### Age and Sex distributions
+
 <center>
-```{r SexAgeDistribution }
+```{r SexAgeDistribution}
 
 clean_data %>% 
   
@@ -232,7 +233,8 @@ clean_data %>%
         digits = 2) %>%
   
   kable_styling("hover", 
-                full_width = F) 
+                full_width = F, 
+                position = "center") 
 
 ```
 </center>

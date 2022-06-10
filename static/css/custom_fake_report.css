@@ -1,0 +1,52 @@
+/* This is the css file of my cv */
+
+
+:root { 
+  --main-width: 900px;
+}
+
+.authors { 
+  
+  font-weight: 200;
+  
+}
+
+.title {
+  font-weight: 300; 
+  
+}
+
+.journal {
+  font-weight: 200;
+}
+ 
+.doi {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 250;
+  color: black;
+  position: relative;
+}
+
+.doi::after{
+  content: "";
+  background: #D6EAF8 ;
+  width: 100% + 5px;
+  position: absolute;
+  bottom: 1px;
+  height: 5px;
+  left: -2px; 
+  right: 0;
+  z-index:-1;
+	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	text-decoration: none;
+}
+
+.doi:hover::after{
+	height: calc(100%)
+}
+
+
+
+
+
