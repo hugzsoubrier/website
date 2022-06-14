@@ -2,6 +2,9 @@
 title: 'MSc Project'
 author: Hugo Soubrier
 date: '2022-05-13'
+html_document:
+    keep_md: true
+    code_folding: hide
 slug: []
 categories: []
 tags: []
@@ -14,7 +17,202 @@ tags: []
 <div id="the-project" class="section level2">
 <h2>The project</h2>
 <p><strong>Spatial distribution and environmental factors associated with the <em>Anopheles</em> mosquitoes on the Bijagós Archipelago, Guinea-Bissau</strong></p>
+<p>Supervisors: Dr. Anna Last, Dr. Kimberley Fornace - LSHTM</p>
+<p><em>Aims</em></p>
+<p>The aim of this project is to use remote-sensing and geospatial methods to better understand
+malaria vector populations on the Bijagós Archipelago, towards eliminating the disease from
+this setting.</p>
+<p>Establishing a spatial picture of several <em>Anopheles</em> mosquito species distribution across 5
+islands during the dry season, will help gain an overall picture of vector presence across the
+Archipelago, but will also be used to investigate the environmental correlates of Anopheles
+mosquito abundance. The use of remotely-sensed data ensures availability and accuracy of
+covariates, in this remote and data-scarce setting. Additionally, data from household
+epidemiological surveys will be used to investigate other epidemiological covariates of
+mosquito density.</p>
+<p><em>Objectives</em></p>
+<ul>
+<li><p>to provide clear mapping of the main mosquito species sampled on these 5 islands during
+the dry period (November/December) 2017.</p></li>
+<li><p>to collect, process and map remotely-sensed environmental and climatological data of
+interest for the studied islands over the study period.</p></li>
+<li><p>to process and handle epidemiological data collected in 2017.</p></li>
+<li><p>to model the association between</p></li>
+</ul>
 </div>
 <div id="the-data" class="section level2">
 <h2>The data</h2>
+<ul>
+<li><strong>Epidemiological data</strong>: were collected in 2017 by Dr. Last - Epidemiological data included: houses risk factors (presence of eaves, closing doors, and closing windows, and if water was stored in the house), as well as details on house members (total number of inhabitants, number of infant (&lt;5yo), child (5-12yo), adolescent (12-17yo) and adults (&gt;17yo)). Finally, variables regarding malaria: household prevalence (defined as number of positives in house / total number inhabitants) and presence of at least one case of malaria (malaria presence/absence)</li>
+</ul>
+<p>Census data were also provided by Dr. Last from 2017.</p>
+<ul>
+<li><p><strong>Entomological data</strong>: were collected in 2017 by Dr. Robert Jones and Elisabeth Pretorius. Mosquitoes were trapped in several villages located on the Bijagos archipelago. Mosquitoes were later phenotypically and molecularly identified.</p></li>
+<li><p><strong>Remote-Sensing data</strong>: Several environmental variables that could influence adult mosquito abundance were investigated. Due to current travel restriction, to the remote aspect of the study site, and limited availability of environmental and climatological field data, all data are remotely-sensed, and freely available online.</p></li>
+</ul>
+<p>Data browsing was performed in <a href="https://earthexplorer.usgs.gov">Earth Explorer</a>, on dates covering the sampling period (1 November 2017 – 31 December 2017 and 21st January 2018).</p>
+<p><em>Temperature</em><br />
+Island temperature data were retrieved from the MODIS11A1 Version 6 product (Wan et al., 2015) that provide daily per-pixel Land Surface Temperature and Emissivity with 1km spatial resolution. Efforts were made to get best quality data for each sampled dates. When data were not available for a given date, best daily temperature data for the previous or following day were used. Similar strategy was used for night and 2-weeks (prior to sampling) temperature data. Raster layers were rescaled, and converted to Degree Celsius units, as indicated in the MODIS product documentation.</p>
+<p><em>Population</em><br />
+Spatial distribution of population in Guinea-Bissau in 2017 was downloaded from Worlpop website (www.worldpop.org; Tatem, 2017). Gives the estimated number of people per grid-cell in a 3 Arc resolution (approximately 100m at the Equator). Mapping approach is Random Forest-based dasymetric redistribution (Stevens et al., 2015).</p>
+<p>In addition to remotely sensed population data, were used Village census data obtained in 2017 (Unpublished Anna, et al., 2017 updated from Instituto Nacional de Estatistica, 2010).</p>
+<p><em>Land-cover</em><br />
+Land cover data were extracted from the European flagship’s programme Copernicus (Buchhorn et al., 2019). Discrete classification data layer follows the UN-FAO land cover classification system. Fractional cover layers give the percentage of a pixel (100m x 100m) that is filled with a specific land cover type. Only Tree cover fraction layers was used.</p>
+<p><em>NDVI, MNDWI and NDBI</em><br />
+Satellites images were used to calculate indices that could be used as proxy for vegetation coverage, urban land cover and presence of water bodies.</p>
+<p>A set of two Sentinel-2 (Sentinel-2 (ESA) image courtesy of the U.S. Geological Survey.) Multispectral, cloudless products from the 31st of December 2017 were retrieved from EarthExplorer, and merged together to cover the full extent of the study site. Normalised Difference Vegetation Index (NDVI) was calculated to provide a proxy for vegetation coverage (Rousse, et al., 1974). NDVI was calculated using both the red and the Near-InfraRed layers provided by the Sentinel-2 MSI, using the following formula:</p>
+<p>𝑁𝐷𝑉𝐼 = 𝑁𝐼𝑅 − 𝑅𝐸𝐷 / 𝑁𝐼𝑅 + 𝑅𝐸𝐷</p>
+<p>Spatial resolution associated with these layers was 10m. NDVI value was extracted for each sampling point, as well as the average NDVI value within a 200m buffer around each sampling point. Because Sentinel2 images had a higher resolution than the LandCover data, Normalised Difference Water Index (NDWI) was used to identified water bodies present on the islands.</p>
+<p>The more precise, Modified NDWI (Xu, 2006) was calculated as follow, using the green and Short Wavelengths Infra-Red (SWIR) layers provided with the Sentinel2 MSI product:</p>
+<p>𝑀𝑁𝐷𝑊𝐼 = 𝑔𝑟𝑒𝑒𝑛 − 𝑆𝑊𝐼𝑅 / 𝑔𝑟𝑒𝑒𝑛 + 𝑆𝑊𝐼𝑅</p>
+<p>Additionally, Normalized Difference Build up Index (NDBI) was calculated to provide an additional proxy for the level of urban/bare soil coverage at and around sampling sites (Y. Zha, J. Gao &amp; S. Ni, 2003). NDBI was calculated using both the SWIR and NIR layers of the sentinel 2 MSI product:</p>
+<p>𝑁𝐷𝐵𝐼 = 𝑆𝑊𝐼𝑅 − 𝑁𝐼𝑅 / 𝑆𝑊𝐼𝑅 + 𝑁𝐼𝑅</p>
+<p>Similarly, to NDVI, this was calculated at the sampling site, and in a 200m buffer. Values lies between -1 and 1, with higher values representing built-up areas, low positive value vegetation and negative values water bodies.</p>
+<p><em>Euclidian distances</em><br />
+The generated NDVI and MDNWI raster layers, were used to evaluate the Euclidian distance between sampling points and the nearest water body, and Dense Vegetation.</p>
+<p>After transforming spatial data to the UTM 28N metric CRS, raster layers were filtered for NDVI &gt;0.6 (very dense vegetation), or MNDWI &gt;0 (indicative of water bodies). A raster to point conversion was performed on the filtered layers, that allowed calculation of the Euclidian distance (in meters) between every sampled houses, and the nearest point. Similar strategy was followed using the LandCover discrete classification layer to filter out “Open Sea” pixels, and thus calculate nearest distance to sea for every sampled house.</p>
+<p><strong>Spatial vectors data</strong>:</p>
+<p><em>Countries outline</em> - were retrieved from <a href="https://gadm.org">GADM</a>.
+<em>Rivers shapefiles</em> -
+<em>populated places</em> -</p>
+</div>
+<div id="study-site" class="section level2">
+<h2>Study site</h2>
+<p>Loading spatial data:</p>
+<pre><code>## Reading layer `gadm36_GNB_0&#39; from data source 
+##   `/Users/hugosoubrier/Desktop/website/content/portfolio/2022-05-13-msc-project/data/Spatial/boundaries/gadm36_GNB_0.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 1 feature and 2 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -16.71489 ymin: 10.86431 xmax: -13.63652 ymax: 12.68544
+## Geodetic CRS:  WGS 84</code></pre>
+<pre><code>## Reading layer `gadm36_GNB_1&#39; from data source 
+##   `/Users/hugosoubrier/Desktop/website/content/portfolio/2022-05-13-msc-project/data/Spatial/boundaries/gadm36_GNB_1.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 9 features and 10 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -16.71489 ymin: 10.86431 xmax: -13.63652 ymax: 12.68544
+## Geodetic CRS:  WGS 84</code></pre>
+<pre><code>## Reading layer `gadm36_GNB_2&#39; from data source 
+##   `/Users/hugosoubrier/Desktop/website/content/portfolio/2022-05-13-msc-project/data/Spatial/boundaries/gadm36_GNB_2.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 37 features and 13 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -16.71489 ymin: 10.86431 xmax: -13.63652 ymax: 12.68544
+## Geodetic CRS:  WGS 84</code></pre>
+<pre><code>## Reading layer `africa&#39; from data source 
+##   `/Users/hugosoubrier/Desktop/website/content/portfolio/2022-05-13-msc-project/data/Spatial/Neighbours/Africa data/africa.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 54 features and 4 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -25.34155 ymin: -46.96289 xmax: 51.39023 ymax: 37.34038
+## CRS:           NA</code></pre>
+<pre><code>## Reading layer `gadm36_GIN_0&#39; from data source 
+##   `/Users/hugosoubrier/Desktop/website/content/portfolio/2022-05-13-msc-project/data/Spatial/Neighbours/Guinea-Ckry/gadm36_GIN_0.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 1 feature and 2 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -15.07625 ymin: 7.193553 xmax: -7.641071 ymax: 12.69152
+## Geodetic CRS:  WGS 84</code></pre>
+<pre><code>## Reading layer `gadm36_SEN_0&#39; from data source 
+##   `/Users/hugosoubrier/Desktop/website/content/portfolio/2022-05-13-msc-project/data/Spatial/Neighbours/Senegal/gadm36_SEN_0.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 1 feature and 2 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -17.54319 ymin: 12.30786 xmax: -11.34247 ymax: 16.69207
+## Geodetic CRS:  WGS 84</code></pre>
+<pre><code>## Reading layer `GNB_rvrlines_1m_dcw&#39; from data source 
+##   `/Users/hugosoubrier/Desktop/website/content/portfolio/2022-05-13-msc-project/data/Spatial/Rivers/gnbrvrlines1mdcw/GNB_rvrlines_1m_dcw.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 216 features and 5 fields
+## Geometry type: MULTILINESTRING
+## Dimension:     XY
+## Bounding box:  xmin: -16.54129 ymin: 10.97724 xmax: -13.69999 ymax: 12.675
+## Geodetic CRS:  WGS 84</code></pre>
+<pre><code>## Reading layer `GNB_rvr_p_1m_dcw&#39; from data source 
+##   `/Users/hugosoubrier/Desktop/website/content/portfolio/2022-05-13-msc-project/data/Spatial/Rivers/gnb_rivers_poly/GNB_rvr_p_1m_dcw.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 36 features and 6 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -16.6791 ymin: 11.03733 xmax: -13.65832 ymax: 12.61224
+## Geodetic CRS:  WGS 84</code></pre>
+<pre><code>## Reading layer `hotosm_gnb_populated_places_points&#39; from data source 
+##   `/Users/hugosoubrier/Desktop/website/content/portfolio/2022-05-13-msc-project/data/Spatial/populated_places/hotosm_gnb_populated_places_points.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 1538 features and 6 fields
+## Geometry type: POINT
+## Dimension:     XY
+## Bounding box:  xmin: -16.64996 ymin: 11.0022 xmax: -13.63372 ymax: 12.70072
+## Geodetic CRS:  WGS 84</code></pre>
+<center>
+<pre class="r"><code># INTRODUCTION MAPS -------------------------------------------------------
+
+#define crop neighbouring countries to the right boundaries for plotting
+bb &lt;- st_bbox(guinea2)
+SNG &lt;- st_crop(SNG,bb)
+GNA &lt;- st_crop(GNA, bb)
+
+#map of africa - this is the inset map
+
+africamap &lt;- ggplot() +
+  
+  geom_sf(data= africa, fill=&quot;white&quot;, col= &quot;black&quot;, size=.2) +
+  
+  geom_sf(data= Guinea_Bissau, fill= &quot;gold&quot;) +
+  
+  coord_sf(xlim = c(-20.5, 12), ylim = c(-4.171, 27.800)) + 
+  
+  annotate(geom=&quot;text&quot;, label= &quot;Atlantic Ocean&quot;, x= -10, y=1, fontface=&quot;bold&quot;, size=4) +
+  
+  theme(panel.border = element_rect(colour = &quot;black&quot;, fill=NA, size=1.2), 
+        panel.background = element_rect(fill=&quot;lightsteelblue1&quot;), 
+        axis.text = element_blank(),
+        axis.text.x = element_blank(),
+        axis.title = element_blank(),
+        axis.line = element_blank(), 
+        axis.ticks = element_blank(), 
+        panel.grid = element_blank(), 
+        plot.margin = unit(c(-2, -2, -2, -2), &quot;cm&quot;))
+
+
+#INTRO MAP
+map1 &lt;- ggplot() + 
+  
+  geom_sf(data = guinea2, fill= &quot;gray89&quot;, col=&quot;black&quot;, alpha=.5, size=.2) +
+  
+  geom_sf(data= SNG, alpha=.2, fill= &quot;gray97&quot;, size=.2) +
+  
+  geom_sf(data= GNA, alpha=.2, fill= &quot;gray97&quot;, size=.2) +
+  
+  geom_sf(data= Bijagos, alpha=.8, fill= &quot;gold&quot;, col=&quot;black&quot;, size=.01)+
+  
+  geom_sf(data=Bissau, col = &quot;black&quot;, fill=&quot;red&quot;, shape=22, size=4, ) +
+  
+  geom_text(aes(label=&quot;Bijagós Archipelago &quot;, x = -16.25, y = 10.95, family= &quot;mono&quot;, fontface= c(&quot;bold&quot;)), size = 4.5) +
+  
+  annotate (geom= &quot;text&quot;, x = -16, y = 12.56, label= &quot;SENEGAL&quot;, fontface=&quot;bold&quot;, size=5) +
+  
+  annotate (geom= &quot;text&quot;, x = -14.25, y = 11.2, label= &quot;GUINEA&quot;, fontface=&quot;bold&quot;, size=5) +
+  
+  annotate (geom= &quot;text&quot;, x = -15.6, y = 11.93, label= &quot;Bissau&quot;, fontface=&quot;bold&quot;, size= 5) +
+  
+  scalebar(data=guinea2, dist= 25, dist_unit = &quot;km&quot;, transform=T, model=&quot;WGS84&quot;, border.size = .2, st.size = 4, height = .01, location= &quot;topright&quot;, anchor = c(x=-14, y=10.94) ) +
+  
+  north(data=guinea2, symbol = 14, scale = .1, location= &quot;topleft&quot;, anchor=c(x=-16.75, y=12.65)) + 
+  
+  theme_void()
+
+
+#assemble maps together
+ggdraw() +
+  draw_plot(map1) +
+  draw_plot(africamap, height = .08, x=.294, y=.570)</code></pre>
+<img src="{{< blogdown/postref >}}index_files/figure-html/intro%20map-1.png" width="672" />
+</center>
 </div>
