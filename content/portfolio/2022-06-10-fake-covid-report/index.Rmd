@@ -22,6 +22,7 @@ knitr::opts_chunk$set(echo = FALSE,
 
 ```{r library loading}
 #spatial analysis 
+
 library(sf)
 library(ggsn)
 library(raster)
@@ -36,6 +37,7 @@ library(linelist)
 library(lubridate)
 
 #visualisation
+library(widgetframe)
 library(highcharter)
 library(kableExtra)
 library(knitr)
@@ -456,7 +458,7 @@ clean_data %>%
   
   column_spec(1, width = "175px") %>% 
   column_spec(2, width = "175px") %>% 
-  column_spec(3, width = "175px")
+  column_spec(3, width = "175px") %>% frameWidget()
 
 ```
 </center>
