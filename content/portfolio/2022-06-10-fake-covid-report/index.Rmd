@@ -458,7 +458,7 @@ clean_data %>%
   
   column_spec(1, width = "175px") %>% 
   column_spec(2, width = "175px") %>% 
-  column_spec(3, width = "175px") %>% frameWidget()
+  column_spec(3, width = "175px")
 
 ```
 </center>
@@ -598,7 +598,10 @@ sym_table <-  sym_table %>% mutate(across(var, ~ case_when(.x == "sym_fever" ~ "
 ```{r dependency wheel symptoms}
 # Use the table to plot the wheel using highcharter 
 #plot
-highchart() %>% 
+
+frameWidget(
+  
+  highchart() %>% 
   
   hc_add_series(data = sym_table, type = "dependencywheel", name = "Symptoms") %>% 
   
@@ -622,6 +625,8 @@ highchart() %>%
       textPath = list(enabled = T, 
                       attributes = list(dy=4))
       )))
+  
+)
 
 ```
 </center>
