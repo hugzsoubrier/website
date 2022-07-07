@@ -305,6 +305,8 @@ Sharing Knowledge and preparation for the final year exams of French and English
  <div class="item">
  
 - Soubrier H, Bangura U, Hoffmann C, Olayemi A, Adesina AS, Günther S, Oestereich L, Fichet-Calvet E. **Detection of Lassa Virus-Reactive IgG Antibodies in Wild Rodents: Validation of a Capture Enzyme-Linked Immunological Assay**. Viruses. 2022; 14(5):993. <a href="https://www.mdpi.com/1999-4915/14/5/993/htm" class="publication-doi">https://doi.org/10.3390/v14050993 </a>
+
+- Koundouno FR, Kafetzopoulou LE, Faye M, Renevey A, Soropogui B, Ifono K, Nelson EV, Kamano AA, Tolno C, Annibaldis G, Millimono SL, Camara J, Kourouma K, Doré A, Millimouno TE, Tolno FMB, Hinzmann J, Soubrier H, Hinrichs M, Thielebein A, Herzer G, Pahlmann M, Ki-Zerbo GA, Formenty P, Legand A, Wiley MR, Faye O, Diagne MM, Sall AA, Lemey P, Bah A, Günther S, Keita S, Duraffour S, Magassouba N. **Detection of Marburg Virus Disease in Guinea**. N Engl J Med. 2022 Jun 30;386(26):2528-2530. <a href="https://www.nejm.org/doi/10.1056/NEJMc2120183" class="publication-doi">https://doi.org/10.1056/NEJMc2120183 </a>
  
  </div>
  </div>
