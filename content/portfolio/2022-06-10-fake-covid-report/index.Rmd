@@ -3,7 +3,7 @@ title: "Epidemiological Report - COVID-19"
 author: Hugo Soubrier
 date: '09/06/2022'
 output: 
-  blogdown::html_document:
+  html_document:
     keep_md: true
 ---
 
@@ -177,7 +177,7 @@ This document is a fake epidemiological report using data provided by the <span 
 
 I have used these data to create various descriptive analysis. Most of the work here is inspired from the great <span class="doi"> <a href = "https://www.epirhandbook.com/en/">Epidemiologist R handbook</a></span>, but also from other resources that I have used to learn R. I use pipes and all of the tidyverse has I have learned in: <span class="doi"> <a href = "https://r4ds.had.co.nz/index.html">R for data science</a></span> and other resources available on <span class="doi"> <a href = "https://www.rstudio.com/resources/books/">R Studio website</a></span>.
 
-For data visualisation I have decided to focuss on interactive graphs using the ``highcharter`` package a wrapper for the <span class="doi"> <a href = "https://jkunst.com/highcharter/index.html">Highcharts Library</a></span>=. I have been working with highcharter for some time now but I used it as an opportunity to learn more, and apply it to a real life scenarios. I do really enjoy the adds-on of interactivity in data analysis.
+For data visualisation I have decided to focuss on interactive graphs using the ``highcharter`` package a wrapper for the <span class="doi"> <a href = "https://jkunst.com/highcharter/index.html">Highcharts Library</a></span>. I have been working with highcharter for some time now but I used it as an opportunity to learn more, and apply it to a real life scenarios. I do really enjoy the adds-on of interactivity in data analysis.
 
 For Epidemiological analysis/description I have used what I knew from the various packages regarding epi: 
 ``linelist``, ``epikit``, ``incidence``, ``sitrep`` ... 

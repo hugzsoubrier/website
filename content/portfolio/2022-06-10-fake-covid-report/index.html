@@ -3,7 +3,7 @@ title: "Epidemiological Report - COVID-19"
 author: Hugo Soubrier
 date: '09/06/2022'
 output: 
-  blogdown::html_document:
+  html_document:
     keep_md: true
 ---
 
@@ -72,7 +72,7 @@ output:
 <h2><strong>Introduction</strong></h2>
 <p>This document is a fake epidemiological report using data provided by the <span class="doi"> <a href = "https://appliedepi.org">Applied Epi</a></span> group using a fake COVID linelist <span class="doi"> <a href = "https://github.com/appliedepi/epiRhandbook_eng">data available on GitHub Epi </a></span>.</p>
 <p>I have used these data to create various descriptive analysis. Most of the work here is inspired from the great <span class="doi"> <a href = "https://www.epirhandbook.com/en/">Epidemiologist R handbook</a></span>, but also from other resources that I have used to learn R. I use pipes and all of the tidyverse has I have learned in: <span class="doi"> <a href = "https://r4ds.had.co.nz/index.html">R for data science</a></span> and other resources available on <span class="doi"> <a href = "https://www.rstudio.com/resources/books/">R Studio website</a></span>.</p>
-<p>For data visualisation I have decided to focuss on interactive graphs using the <code>highcharter</code> package a wrapper for the <span class="doi"> <a href = "https://jkunst.com/highcharter/index.html">Highcharts Library</a></span>=. I have been working with highcharter for some time now but I used it as an opportunity to learn more, and apply it to a real life scenarios. I do really enjoy the adds-on of interactivity in data analysis.</p>
+<p>For data visualisation I have decided to focuss on interactive graphs using the <code>highcharter</code> package a wrapper for the <span class="doi"> <a href = "https://jkunst.com/highcharter/index.html">Highcharts Library</a></span>. I have been working with highcharter for some time now but I used it as an opportunity to learn more, and apply it to a real life scenarios. I do really enjoy the adds-on of interactivity in data analysis.</p>
 <p>For Epidemiological analysis/description I have used what I knew from the various packages regarding epi:
 <code>linelist</code>, <code>epikit</code>, <code>incidence</code>, <code>sitrep</code> …</p>
 <p>For spatial analysis, I have chosen to get out of <code>ggplot</code>, or <code>tmap</code> which I have used a lot, to focuss on <code>leaflet</code> as it was once more an occasion to use interactivity in real life scenario for data visualisation and I think this is very powerful.</p>
