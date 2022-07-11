@@ -7,6 +7,9 @@ output:
     keep_md: true
 ---
 
+
+THIS IS A TEST LINK OF HTML <a href = "report-covid/fake_report_covid_hugo_soubrier.html">HERE</a>
+
 <html>  
 <link rel="stylesheet" href="/css/custom_fake_report.css" />
 </html>
