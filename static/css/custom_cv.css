@@ -133,6 +133,7 @@ li > .publication-doi {
 }
 
 li >.publication-doi::after{
+  text-decoration: none;
   content: "";
   background: #D0ECE7     ;
   width: 100% + 5px;

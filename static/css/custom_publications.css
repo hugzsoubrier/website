@@ -29,6 +29,7 @@
 }
 
 .doi::after{
+  text-decoration: none;
   content: "";
   background: #D6EAF8 ;
   width: 100% + 5px;
