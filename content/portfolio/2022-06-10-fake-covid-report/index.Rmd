@@ -599,7 +599,10 @@ sym_table <-  sym_table %>% mutate(across(var, ~ case_when(.x == "sym_fever" ~ "
 ```{r dependency wheel symptoms}
 # Use the table to plot the wheel using highcharter 
 #plot
-highchart() %>% 
+
+widgetframe::frameWidget(
+  
+  highchart() %>% 
   
   hc_add_series(data = sym_table, type = "dependencywheel", name = "Symptoms") %>% 
   
@@ -622,7 +625,9 @@ highchart() %>%
       distance = 13,
       textPath = list(enabled = T, 
                       attributes = list(dy=4))
-      )))
+      ))) 
+  
+)
 
 ```
 </iframe>
