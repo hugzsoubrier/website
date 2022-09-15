@@ -14,8 +14,6 @@ menu:
       url: /publications/
     - name: Portofolio
       url: /portfolio/
-    - name: Reading List
-      url: /readings/
 
 boolean: false
 params:
