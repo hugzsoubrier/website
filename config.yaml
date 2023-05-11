@@ -42,4 +42,4 @@ params:
                 url: /portfolio/
 
 assets:
-  favicon: /apple-touch-icon.png
+  favicon: favicons/apple-touch-icon.png
