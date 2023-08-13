@@ -7,4 +7,4 @@ categories: []
 tags: []
 ---
 
-This section will be showing all the coding project I have been working on. I am currently re-coding and organising the projects so they can be nicely displayed. 
+Here is a selection of project I have been working on
