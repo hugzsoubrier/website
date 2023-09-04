@@ -6,12 +6,12 @@ slug: []
 categories: []
 tags: []
 output:
-   blogdown::html_page:
-     toc: true
+blogdown::html_page:
+toc: true
 ---
 
 <html>  
-    <link rel="stylesheet" href="/css/custom_cv.css" />
+<link rel="stylesheet" href="/css/custom_cv.css" />
 </html>
 
 <center>
@@ -30,20 +30,20 @@ output:
 <!-- This is the Education Section -->
 
 <div class = "grid">
-  <div class="section">Education</div>
-  
-  <div class="item">MSc Control of Infectious Diseases</div>
-  <div class="org">London School of Hygiene and Tropical Medicine</div>
-  <div class="date">2019 - 2020</div>
-  <div class="description"> 
-  
+<div class="section">Education</div>
+
+<div class="item">MSc Control of Infectious Diseases</div>
+<div class="org">London School of Hygiene and Tropical Medicine</div>
+<div class="date">2019 - 2020</div>
+<div class="description"> 
+
 Multi-disciplinary course aiming at bridging disciplines to study and control infectious diseases.\
 **Merit Distinction** - GPA: 4.01/5 (80,2% Upper-First-class honours).
- 
- <details>
- <summary> more details </summary> 
- 
- **Term 1:** 
+
+<details>
+<summary> more details </summary> 
+
+**Term 1:** 
 
 - *Introduction to Disease agents and their control* 
 - *Extended Epidemiology*, *Basics Statistics for Public Health* 
@@ -83,26 +83,26 @@ Objectives:
 
 - All analyses, maps and data science were performed on R.
 
- </details>
- 
- </div>
- </div>
- 
+</details>
+
+</div>
+</div>
+
 <div class = "grid">
-  <div class="item">BSc Microbiology</div>
-  <div class="org">Imperial College London</div>
-  <div class="date">2016 - 2019</div>
-  <div class="description">
-  
+<div class="item">BSc Microbiology</div>
+<div class="org">Imperial College London</div>
+<div class="date">2016 - 2019</div>
+<div class="description">
+
 The course covered many aspects of biological sciences. Selection of options covering Bacteriology, Virology, and Immunology allowed me to transform it into a Microbiology degree.\
 **Second class Honours (Upper division)** - 69%
- 
- <details>
- <summary>
- more details
- </summary>
- 
- **3rd Year** - overall 69%
+
+<details>
+<summary>
+more details
+</summary>
+
+**3rd Year** - overall 69%
 
 - *Medical Microbiology* - 75%
 - *Advanced Topics in Infection and Immunity* - 68%
@@ -139,53 +139,105 @@ Horizons co-curricula optional module on *History of Revolutions*.
 - Cell Biology and Genetics - 69%
 - Evolution and Ecology - 62%
 
- </details>
- 
- </div>
- </div>
+</details>
+
+</div>
+</div>
 
 <div class = "grid">
-  <div class="item">French Baccalaureat - International option</div>
-  <div class="org">Lycée International de Valbonne</div>
-  <div class="date">2013-2016</div>
-  <div class="description">
-  
+<div class="item">French Baccalaureat - International option</div>
+<div class="org">Lycée International de Valbonne</div>
+<div class="date">2013-2016</div>
+<div class="description">
+
 French Scientific Baccalaureat with International Options (OIB)\
 **High Honours** - 17,40/20
- </div>
- </div>
- 
- <hr>
- 
- 
+</div>
+</div>
+
+<hr>
+
+
 <!-- This is the Experience Section -->
 
+
 <div class = "grid">
-  <div class="section">Experience</div>
-  
-  <div class="item">Research Assistant</div>
-  <div class="org">Africa Team, Bernhard Nocht Institute of Tropical Medicine</div>
-  <div class="date">May. 2021 - ongoing</div>
-  <div class="description">
-  
- Research Assistant position within the Africa Team. My role was to support the capacity building and research activities going on in Guinea. I also created a R dahsboard and SQL process to visualise / analyse the activities of laboratories. The dashboard also included analysis to follow activities per pathogen for future outbreak response. 
- 
- <details>
- 
- <summary> more details</summary>
- 
- Involved in 5 deployment under GOARN/ WHO to support **diagnostic capacity building for EBOV outbreak response in Guinea**. 
- 
+<div class="section">Experience</div>
+
+<div class = "item">Statistician</div>
+<div class="org">Epicentre</div>
+<div class="date">June 2023 - ongoing</div>
+<div class="description">
+
+Part of the Data Science team of *Epicentre*, under supervision of Anton Camacho. Working on the *<a ref= "https://pubmed.ncbi.nlm.nih.gov/36996258/#:~:text=The%20aim%20of%20the%20Enable,in%20five%20West%20African%20countries" class="publication-doi">Lassa ENABLE study</a>* sponsored by the Coalition for Epidemic Prepardness & Innovations (<a ref= "https://cepi.net" class="publication-doi">CEPI</a> ). 
+
+<details>
+<summary> more details</summary>
+
+The aim of the project was to design a Severity Score Index for Lassa Fever clinical course, as a potential endpoint for future phase 3 vaccine trials.
+
+- Literature review on Lassa Fever clinical course, severity and sequelaes 
+- Building data cleaning/ extraction and preparation pipelines from REDCAP databases using R 
+- Summary statistics, regressions and Risk factor associated with fatal outcome
+- Presentation of preliminary results
+
+</details>
+
+</div>
+</div>
+
+<div class = "grid">
+<div class = "item">Lead Instructor</div>
+<div class="org">Applied Epi</div>
+<div class="date">September 2022 - ongoing</div>
+<div class="description">
+
+Part of the lead instructor team for *R for Epidemiology* trainings offered by *<a ref= "https://appliedepi.org" class="publication-doi">Applied Epi</a>*
+
+<details>
+<summary> more details</summary>
+
+Involved as lead instructor in the 40h synchronous course "Introduction to R for Applied Epidemiology".\ 
+The introduction course covers:
+
+- Basics of R programming and use of the `tidyverse`
+- Introduction to data cleaning, wrangling using the `tidyverse`
+- Grouping, joining and pivotting using `tidyverse`
+- Basics visualisations using `ggplot`
+- Epidemiology visualisation using `ggplot` 
+- Introduction to `Rmarkdown`
+- R help desk for application of the course learning material to real life data
+
+Lead instructor position involves presenting the concepts, live R coding demo, and coordination with assistant instructor 
+</details>
+
+</div>
+</div>
+
+<div class = "grid">
+<div class="item">Research Assistant</div>
+<div class="org">Africa Team, Bernhard Nocht Institute of Tropical Medicine</div>
+<div class="date">May. 2021 - ongoing</div>
+<div class="description">
+
+Research Assistant position within the Africa Team. My role was to support the capacity building and research activities going on in Guinea. I also created a R dahsboard and SQL process to visualise / analyse the activities of laboratories. The dashboard also included analysis to follow activities per pathogen for future outbreak response. 
+
+<details>
+
+<summary> more details</summary>
+
+Involved in 5 deployment under GOARN/ WHO to support **diagnostic capacity building for EBOV outbreak response in Guinea**. 
+
 The project partnered with the *Laboratoire des Fièvre Hémmoragiques Virales de Guinée (LFHVG)*, the reference laboratory based in Conakry, the  *Laboratoire des Fièvre Hémmoragiques Virales de Gueckedou (LFHV-GKD)* and the *Hopital Régional de N'Zérékoré* in the Forest regions of guinea. 
- 
+
 The main aim was to train local staff, re-organise & re-structure the laboratories as well as deliver consumables and equipment, with the objective of strengthening the diagnostic activities of Guinea regarding hemorrhagic fevers viruses: EBOV, MARV, LASV, DENV, YFV, CCHFV ...
 
 I also conducted some scientific research on surveillance of several pathogens in forest guinea using serology. The work is still ongoing with a publication in scope. 
 
 I was involved in the following tasks:
- 
+
 - Theoretical and practical training of local staff on diagnostics (sample reception, manipulation & inactivation, RNA extraction, Master Mix preparation and qRT-PCR runs on RotorGenes, Analysis of runs and data entry). Enhanced training on Bio-safety and manipulation under the Glovebox. 
- 
+
 - Creation of a full database system for the storage, samples, results and equipment management of the laboratories. The new databases were created according to local staff needs, and was made compatible with a later process of epidemiological/data analysis. Training of the local staff on Excel handling, and data entry. 
 
 - Creation of a complete Dashboard on R shiny to allow visualisation / analysis of all the Laboratory activities. As well as "per pathogen" analysis for future outbreak response. 
@@ -201,18 +253,18 @@ I was involved in the following tasks:
 - Multiple Electrical work to cope with electrical instability and decrease the laboratories dependence on public electricity. Work on generators and whole-laboratory electrical plans.
 
 - General work regarding Public relationship in Africa
- 
- </details>
- 
- </div>
- </div>
- 
+
+</details>
+
+</div>
+</div>
+
 <div class = "grid">
- <div class="item">Research assistant</div>
- <div class="org">LAROCS project/ BNITM</div>
- <div class="date">Nov. 2020 - May. 2021</div>
- <div class="description">
-  
+<div class="item">Research assistant</div>
+<div class="org">LAROCS project/ BNITM</div>
+<div class="date">Nov. 2020 - May. 2021</div>
+<div class="description">
+
 Research assistant on Lassa fever immunology in humans and rodents for the LAROCS project supervised by Dr. Elisabeth Fichet-Calvet.
 
 <details>
@@ -233,20 +285,20 @@ Research assistant on Lassa fever immunology in humans and rodents for the LAROC
 
 The work resulted in a first author publication in *Viruses*: **Detection of Lassa virus-reactive IgG antibodies in wild rodents: validation of a capture enzyme-linked immunological assay**
 
- </details>
- 
- </div>
- </div>
- 
+</details>
+
+</div>
+</div>
+
 <div class = "grid">
- <div class="item">UROP internship</div>
- <div class="org">Department of Infectious Disease Epidemiology, Imperial College London</div>
- <div class="date">Aug. - Sept. 2018</div>
- <div class="description">
+<div class="item">UROP internship</div>
+<div class="org">Department of Infectious Disease Epidemiology, Imperial College London</div>
+<div class="date">Aug. - Sept. 2018</div>
+<div class="description">
 8 weeks UROP internship in Dr Nick Croucher’s Bacteriology group at St Mary’s Hospital campus of Imperial College London, Departement of Infectious Disease Epidemiology.
 
- <details>
- <summary> more details</summary>
+<details>
+<summary> more details</summary>
 
 - Research project focused on the *S. pneumoniae* competence system.
 
@@ -258,32 +310,32 @@ The work resulted in a first author publication in *Viruses*: **Detection of Las
 
 - Produced a detail protocol for the generation of *S. pneumoniae* protoplasts, and generation of mutated endA gene, for study of competence asymmetry.
 
- </details>
- 
- </div>
- </div>
- 
+</details>
+
+</div>
+</div>
+
 <div class = "grid">
- <div class="item">Tutoring sessions for Science</div>
- <div class="org">All levels - Preparation International Baccalaureate</div>
- <div class="date">2016 - 2020</div>
- <div class="description">
-  
+<div class="item">Tutoring sessions for Science</div>
+<div class="org">All levels - Preparation International Baccalaureate</div>
+<div class="date">2016 - 2020</div>
+<div class="description">
+
 Sharing Knowledge and preparation for the final year exams of French and English: Baccalauréat, A-levels and IB, in Physics-Chemistry, Biology, Geology, and History.
- 
- </div>
- </div>
- 
+
+</div>
+</div>
+
 <div class = "grid">
- <div class="item">Summer volunteering</div>
- <div class="org">South African Game reserve</div>
- <div class="date">2014 & 2015</div>
- <div class="description">
-  
- 2 x 3 months Summer volunteering to help with animal monitoring and conservation in South African game reserves.
- 
- <details>
- <summary> more details</summary>
+<div class="item">Summer volunteering</div>
+<div class="org">South African Game reserve</div>
+<div class="date">2014 & 2015</div>
+<div class="description">
+
+2 x 3 months Summer volunteering to help with animal monitoring and conservation in South African game reserves.
+
+<details>
+<summary> more details</summary>
 - Balule reserve, Kruger National Park and Zululand
 
 - Help with the conservation of endangered species.
@@ -291,29 +343,29 @@ Sharing Knowledge and preparation for the final year exams of French and English
 - Daily tracking, monitoring and identification of the main endangered species in the reserves
 
 - Handling of animals, and carcasses for hygiene purposes - prevention disease outbreak
- </details>
- 
- </div>
- </div>
- 
- <hr>
- 
+</details>
+
+</div>
+</div>
+
+<hr>
+
 <!-- This is the Publications Section -->
 
 <div class = "grid">
- <div class="section">Publications</div>
- <div class="item">
- 
+<div class="section">Publications</div>
+<div class="item">
+
 - Soubrier H, Bangura U, Hoffmann C, Olayemi A, Adesina AS, Günther S, Oestereich L, Fichet-Calvet E. **Detection of Lassa Virus-Reactive IgG Antibodies in Wild Rodents: Validation of a Capture Enzyme-Linked Immunological Assay**. Viruses. 2022; 14(5):993. <a href="https://www.mdpi.com/1999-4915/14/5/993/htm" class="publication-doi">https://doi.org/10.3390/v14050993 </a>
 
- </div>
- </div>
+</div>
+</div>
 
- <div class = "grid">
- <div class="item">
+<div class = "grid">
+<div class="item">
 - Koundouno FR, Kafetzopoulou LE, Faye M, Renevey A, Soropogui B, Ifono K, Nelson EV, Kamano AA, Tolno C, Annibaldis G, Millimono SL, Camara J, Kourouma K, Doré A, Millimouno TE, Tolno FMB, Hinzmann J, Soubrier H, Hinrichs M, Thielebein A, Herzer G, Pahlmann M, Ki-Zerbo GA, Formenty P, Legand A, Wiley MR, Faye O, Diagne MM, Sall AA, Lemey P, Bah A, Günther S, Keita S, Duraffour S, Magassouba N. **Detection of Marburg Virus Disease in Guinea**. N Engl J Med. 2022 Jun 30;386(26):2528-2530. <a href="https://www.nejm.org/doi/10.1056/NEJMc2120183" class="publication-doi"> https://doi.org/10.1056/NEJMc2120183 </a>
- </div> 
- </div>
+</div> 
+</div>
 
 <hr>
 
@@ -322,21 +374,21 @@ Sharing Knowledge and preparation for the final year exams of French and English
 
 <!-- Languages -->
 <div class = "grid">
- <div class="section">Specific Skills</div>
- <div class="item"> Languages </div>
- <div class ="description"> 
- 
+<div class="section">Specific Skills</div>
+<div class="item"> Languages </div>
+<div class ="description"> 
+
 - French : native speaker 
 - English : fluent
 - Spanish : very good comprehension and good speaking ability
- 
- </div>
- </div>
+
+</div>
+</div>
 
 <!-- Data Science -->
 <div class = "grid">
- <div class="item"> Data science </div>
- <div class ="description"> 
+<div class="item"> Data science </div>
+<div class ="description"> 
 
 <h5>General R</h5> 
 Strong R skills for data sciences especially using Pipes and the Tidyverse. Strong experience of R markdown, R shiny, R Blogdown. 
@@ -363,13 +415,13 @@ Experience of SQL querying especially with postgres SQL. I have used it to as a 
 <h5>HTML/CSS</h5>
 Experience of HTML to modify a markdown file, and create websites using R. CSS stylesheet created to customise the Markdown documents, shiny App and website.
 
- </div>
- </div>
- 
+</div>
+</div>
+
 <!-- Spatial Data Science -->
- <div class = "grid">
- <div class="item"> Spatial Data science </div>
- <div class ="description"> 
+<div class = "grid">
+<div class="item"> Spatial Data science </div>
+<div class ="description"> 
 
 <h5>R</h5> 
 Strong R skills for spatial displaying, and analysis, including use and analysis of remote-sensing data.
@@ -381,20 +433,20 @@ Very Good understanding of ArcGIS, QGIS, GeoDa and SatScan used in several proje
 <h5>Illustrator</h5>
 Used for final map-making refinements. 
 
- </div>
- </div>
- 
+</div>
+</div>
+
 <!-- Other softwares -->
- <div class = "grid">
- <div class="item"> Other Softwares of Interests</div>
- <div class ="description"> 
- 
+<div class = "grid">
+<div class="item"> Other Softwares of Interests</div>
+<div class ="description"> 
+
 - ODK/Enketo for questionnaire designing
 - Basics phylogenetics analysis using BEAST and associated softwares (Beauti, Tracer, FigTree…)
 - Sequence visualiser softwares: ARTEMIS / Snap Gene
- 
- </div>
- </div>
+
+</div>
+</div>
 
 <hr>
 
@@ -415,7 +467,7 @@ more details
 - setting up field Rapid response diagnostics laboratory
 - Setting up and work under Gloveboxes for Class-4 pathogen handling
 - Diagnostic Laboratory workflow: Sample reception, inactivation, extraction, MasterMix and qRT-PCR, data validation entry and reporting. 
- </details>
+</details>
 
 Mandatory Online Certificates for **deployment under WHO/GOARN**:
 
@@ -434,8 +486,8 @@ Mandatory Online Certificates for **deployment under WHO/GOARN**:
 **Online training for Ethic Research - LSHTM** 
 
 Short online course, with online examination about the Ethics in Science, with a emphasis on Epidemiological research. Resulted in a Certificate of Ethics Research.
- 
- 
+
+
 **GIS course - LSHTM**
 
 participated in short-course on the introduction to GIS and Spatial Analysis, using ARC-GIS.
@@ -444,34 +496,34 @@ participated in short-course on the introduction to GIS and Spatial Analysis, us
 
 3 days WHO Health Assembly simulation conference. Themed on “Conflict and Health”. Represented the pharmaceutical company PFIZER, which approval was required for countries resolution. Lobby work to ensure the company interest are reflected in resolutions tackling health aspects in conflict zone. The conference gave a great understanding of diplomacy, and global health governance.
 
- </div>
- </div>
- 
+</div>
+</div>
+
 <hr>
 
 <!-- This is the Interests Section -->
 
 <div class = "grid">
- <div class="section">Interests</div>
- <div class="description">
- 
+<div class="section">Interests</div>
+<div class="description">
+
 **Captain of IC Fencing Men’s second Team**.
 
 - 16 years of Fencing, participated in National and International competitions (France).
- 
+
 - Member of IC Fencing team 3 years in a row, winners of 2018 South-Eastern Conference Cup
 and South-Eastern 2A league, got promoted to South-Eastern 1A league.
 
 - Organisation of Trainings and Travels.
- 
+
 **International Open Water PADI license**. 25+ scuba diving and nocturnal divings. 
 
 Amateur of sailing, freediving and spearfishing.
 
 Historical, Geographic, Philosophical and Scientific readings.
 
- </div>
- </div>
+</div>
+</div>
 
 
 
