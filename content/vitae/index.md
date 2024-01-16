@@ -163,7 +163,6 @@ French Scientific Baccalaureat with International Options (OIB)\
 
 <div class = "grid">
 <div class="section">Experience</div>
-
 <div class = "item">Statistician</div>
 <div class="org">Epicentre</div>
 <div class="date">June 2023 - ongoing</div>
